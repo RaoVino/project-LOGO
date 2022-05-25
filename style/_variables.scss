@@ -1,0 +1,41 @@
+$liblack:#0A0A0A;
+$black:#000000;
+$white:#FFFFFF;
+$bannerPara:#ECECEC;
+$para:#616161;
+$headerColor:#111010;
+$productPara:#B4B4B4;
+$afterColor:#c4c4c4;
+$visionColor:#F7F7F7;
+$background:#F9F9f9;
+$footerpara:#a4a4a4;
+@mixin list-a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $liblack;
+}
+
+@mixin paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@mixin header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: $headerColor;
+}
+
+@mixin projectHead {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: $headerColor;
+}
