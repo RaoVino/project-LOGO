@@ -27,7 +27,8 @@ i {
 }
 
 .button {
-    button {
+    button,
+    a {
         width: 150px;
         padding: 10px;
         font-style: normal;
@@ -87,4 +88,8 @@ i {
             background-color: $white;
         }
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }

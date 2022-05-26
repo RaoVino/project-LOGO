@@ -1,0 +1,167 @@
+    .catagories {
+        background-image: url(../images/catalogBG.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+        padding: 0;
+        .catalog-container {
+            background-color: rgba(37, 37, 37, 0.45);
+            width: 100%;
+            height: 80vh;
+        }
+        .maincontainer {
+            display: flex;
+            justify-content: flex-start;
+            height: 100%;
+            .catalogImg {
+                @media screen and (max-width: 900px) {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .newGenerationSec {
+                background: none;
+                height: auto;
+                p {
+                    font-size: 18px;
+                    color: #e4e4e4;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+    
+    .catagory {
+        margin-top: 100px;
+        background-image: url(../images/catogoriesBG.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .maincontainer {
+            justify-content: space-between;
+            display: flex;
+            @media screen and (max-width: 900px) {
+                display: block;
+                padding: 20px;
+            }
+            .catagoriesFirst {
+                flex-basis: 23%;
+                position: relative;
+                span {
+                    @include paragraph;
+                    color: $white;
+                    font-size: 12px;
+                    @media screen and (max-width: 900px) {
+                        font-size: 20px;
+                    }
+                }
+                h5 {
+                    @include header;
+                    font-size: 22px;
+                    color: $white;
+                    margin: 10px 0;
+                    @media screen and (max-width: 900px) {
+                        font-size: 35px;
+                    }
+                }
+                p {
+                    @include paragraph;
+                    font-size: 18px;
+                    color: #BCBCBC;
+                    @media screen and (max-width: 900px) {
+                        font-size: 25px;
+                    }
+                }
+                &:hover {
+                    .catagoriesHover {
+                        visibility: visible;
+                    }
+                }
+                .catagoriesPara {
+                    position: relative;
+                    .paragraph {
+                        position: absolute;
+                        bottom: 20px;
+                        left: 20px;
+                    }
+                    .bgImg {
+                        img {
+                            width: 100%;
+                        }
+                        @media screen and (max-width: 900px) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+                .catagoriesHover {
+                    background-color: $liblack;
+                    padding: 25px;
+                    position: absolute;
+                    top: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+    
+    .ZurichSec {
+        .maincontainer {
+            .project-container {
+                .filterSec {
+                    margin: 70px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    @media screen and (max-width: 900px) {
+                        display: block;
+                    }
+                    .results {
+                        span {
+                            @include paragraph;
+                            color: #808080;
+                            font-size: 12px;
+                        }
+                        @media screen and (max-width: 900px) {
+                            text-align: left;
+                            padding-left: 40px;
+                        }
+                    }
+                    .sortSec {
+                        flex-basis: 36%;
+                        @media screen and (max-width: 900px) {
+                            text-align: center;
+                            padding: 20px;
+                        }
+                        @media screen and (max-width: 414px) {
+                            text-align: left;
+                            padding-left: 40px;
+                        }
+                        img {
+                            margin-right: 5px;
+                            @media screen and (max-width: 414px) {
+                                &:nth-child(4) {
+                                    display: none;
+                                }
+                            }
+                        }
+                        i {
+                            margin-right: 5px;
+                        }
+                        span {
+                            color: #252525;
+                            font-size: 15px;
+                            margin-right: 8px;
+                            @media screen and (max-width: 414px) {
+                                display: none;
+                            }
+                            &:nth-child(3) {
+                                margin-left: 8px;
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

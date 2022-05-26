@@ -16,6 +16,9 @@
                 width: 60%;
                 margin: auto;
                 margin-bottom: 60px;
+                @media screen and(max-width: 900px) {
+                    margin-bottom: 20px;
+                }
             }
             .button {
                 button {
@@ -92,15 +95,15 @@
                     margin-top: 50px;
                     button {
                         @media screen and(max-width: 900px) {
-                            margin-top: 20px;
+                            margin-top: 10px;
                             padding: 20px;
                             width: 50%;
-                            font-size: larger;
+                            font-size: 15px;
                         }
                         @media screen and(max-width: 414px) {
                             padding: 10px;
                             margin-top: 20px;
-                            width: 80%;
+                            width: 90%;
                             font-size: larger;
                         }
                     }
@@ -139,6 +142,16 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.Related {
+    .maincontainer {
+        .project-container {
+            h3 {
+                margin: 50px 0;
             }
         }
     }

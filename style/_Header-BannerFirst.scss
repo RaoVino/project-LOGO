@@ -1,9 +1,9 @@
 .headerSec {
     .maincontainer {
-        h1 {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 3em;
+        .headLogo {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
         }
         .navSec {
             display: flex;

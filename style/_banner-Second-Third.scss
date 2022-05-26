@@ -44,7 +44,6 @@
                     color: $para;
                     @media screen and(max-width: 900px) {
                         text-align: center;
-                        // margin: 20px;
                         font-size: 16px;
                     }
                 }
@@ -65,9 +64,7 @@
                             padding: 10px;
                             width: 80%;
                             font-size: larger;
-                        }
-                        @media screen and(max-width: 586px) {
-                            margin-top: 20px;
+                            margin-top: 0px;
                         }
                     }
                 }
