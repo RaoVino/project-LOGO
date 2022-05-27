@@ -64,16 +64,17 @@
 .headerSec .maincontainer .navSec .linkSec ul li:last-child {
   margin-right: 0;
 }
-.headerSec .maincontainer .navSec .cartSec button {
+.headerSec .maincontainer .navSec .cartSec a {
+  background: none;
   margin-left: 20px;
 }
 @media screen and (max-width: 1155px) {
-  .headerSec .maincontainer .navSec .cartSec button {
+  .headerSec .maincontainer .navSec .cartSec a {
     margin-left: 10px;
   }
 }
 @media screen and (max-width: 900px) {
-  .headerSec .maincontainer .navSec .cartSec button {
+  .headerSec .maincontainer .navSec .cartSec a {
     margin-right: 20px;
   }
 }
@@ -93,8 +94,8 @@
   height: 100%;
 }
 .bannerFirst .maincontainer .newGenerationSec {
-  width: 50%;
-  padding: 20px;
+  width: 58%;
+  padding: 50px;
   background: rgba(0, 0, 0, 0.36);
 }
 @media screen and (max-width: 1155px) {
@@ -138,6 +139,7 @@
   font-size: 18px;
   line-height: 28px;
   color: #ECECEC;
+  margin-bottom: 55px;
 }
 @media screen and (max-width: 900px) {
   .bannerFirst .maincontainer .newGenerationSec p {
@@ -147,27 +149,51 @@
   }
 }
 .bannerFirst .maincontainer .newGenerationSec .button {
-  text-align: center;
-}
-.bannerFirst .maincontainer .newGenerationSec .button button {
-  margin-top: 20px;
-  color: #000000;
-  background-color: #FFFFFF;
+  text-align: left;
+  display: block;
 }
 @media screen and (max-width: 900px) {
-  .bannerFirst .maincontainer .newGenerationSec .button button {
-    padding: 20px;
-    margin-top: 20px;
-    width: 50%;
-    font-size: larger;
+  .bannerFirst .maincontainer .newGenerationSec .button {
+    text-align: center;
+    margin: 50px;
+    width: 25%;
+    margin: auto;
   }
 }
 @media screen and (max-width: 414px) {
-  .bannerFirst .maincontainer .newGenerationSec .button button {
+  .bannerFirst .maincontainer .newGenerationSec .button {
+    text-align: center;
+    width: 55%;
+    margin: auto;
+  }
+}
+.bannerFirst .maincontainer .newGenerationSec .button a {
+  margin-top: 20px;
+  color: #000000;
+  background-color: #FFFFFF;
+  padding: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inherit;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .bannerFirst .maincontainer .newGenerationSec .button a {
+    padding: 15px;
+    margin-top: 20px;
+    width: 200px;
+    font-size: larger;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 414px) {
+  .bannerFirst .maincontainer .newGenerationSec .button a {
     padding: 10px;
     margin-top: 20px;
-    width: 80%;
     font-size: larger;
+    width: 100%;
   }
 }
 
@@ -529,7 +555,8 @@ html {
 }
 @media screen and (max-width: 414px) {
   .creativeSec .maincontainer .creative-d .play {
-    width: 60%;
+    width: 30%;
+    position: static;
   }
 }
 .creativeSec .maincontainer .creative-d .play .watch {
@@ -633,7 +660,7 @@ html {
   padding: 20px;
   left: -100px;
   width: 55%;
-  bottom: 45px;
+  bottom: 32px;
 }
 @media screen and (max-width: 900px) {
   .bannerSecond .maincontainer .imgcontainer .newGenerationSec {
@@ -667,20 +694,33 @@ html {
   }
 }
 .bannerSecond .maincontainer .imgcontainer .newGenerationSec .button {
-  text-align: center;
+  text-align: left;
+}
+@media screen and (max-width: 900px) {
+  .bannerSecond .maincontainer .imgcontainer .newGenerationSec .button {
+    text-align: center;
+    width: 50%;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .bannerSecond .maincontainer .imgcontainer .newGenerationSec .button {
+    width: 100%;
+    margin-top: 0px;
+  }
 }
 .bannerSecond .maincontainer .imgcontainer .newGenerationSec .button button {
   width: 120px;
-  margin-top: 40px;
+  margin: 0 0 20px 0;
   background-color: #000000;
   color: #FFFFFF;
 }
 @media screen and (max-width: 900px) {
   .bannerSecond .maincontainer .imgcontainer .newGenerationSec .button button {
-    margin-top: 20px;
-    padding: 20px;
-    width: 50%;
+    margin-top: 0;
+    padding: 10px;
     font-size: larger;
+    width: 100%;
   }
 }
 @media screen and (max-width: 414px) {
@@ -767,7 +807,17 @@ html {
   }
 }
 .bannerThree .maincontainer .Shoroomcontainer .newGenerationSec .button {
-  text-align: center;
+  text-align: left;
+}
+@media screen and (max-width: 900px) {
+  .bannerThree .maincontainer .Shoroomcontainer .newGenerationSec .button {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 414px) {
+  .bannerThree .maincontainer .Shoroomcontainer .newGenerationSec .button {
+    width: 100%;
+  }
 }
 .bannerThree .maincontainer .Shoroomcontainer .newGenerationSec .button button {
   width: 120px;
@@ -1572,6 +1622,7 @@ footer .maincontainer .copyright p {
 @media screen and (max-width: 414px) {
   .maincontainer .productName .heartcart .plus {
     display: block;
+    margin: 0;
   }
 }
 .maincontainer .productName .heartcart .plus .minus {
@@ -1630,6 +1681,343 @@ footer .maincontainer .copyright p {
   .maincontainer .productName .heartcart .plus i {
     display: none;
   }
+}
+
+.maincontainer h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #111010;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 414px) {
+  .maincontainer h4 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .backbutton {
+    margin-left: 20px;
+  }
+}
+.maincontainer .backbutton p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .backbutton p {
+    display: block;
+  }
+}
+.maincontainer .backbutton button {
+  background: none;
+}
+.maincontainer .backbutton button img {
+  margin-right: 5px;
+}
+.maincontainer .ShopingcartSec {
+  display: flex;
+  margin-top: 100px;
+}
+@media screen and (max-width: 900px) {
+  .maincontainer .ShopingcartSec {
+    display: block;
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .ShopingcartSec {
+    padding: 20px;
+    margin-top: 0;
+  }
+}
+.maincontainer .ShopingcartSec .unitPriceSec {
+  flex-basis: 65%;
+  padding: 20px 0;
+}
+@media screen and (max-width: 900px) {
+  .maincontainer .ShopingcartSec .unitPriceSec {
+    display: block;
+  }
+}
+.maincontainer .ShopingcartSec .unitPriceSec .cartHead {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .ShopingcartSec .unitPriceSec .cartHead {
+    display: none;
+  }
+}
+.maincontainer .ShopingcartSec .unitPriceSec .cartHead li {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #111010;
+  font-size: 16px;
+}
+.maincontainer .ShopingcartSec .unitPriceSec .firstItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .ShopingcartSec .unitPriceSec .firstItem {
+    display: block;
+  }
+}
+.maincontainer .ShopingcartSec .unitPriceSec .firstItem p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 16px;
+  color: #151515;
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .ShopingcartSec .unitPriceSec .firstItem p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .ShopingcartSec .unitPriceSec .firstItem p:nth-child(4) {
+    display: none;
+  }
+}
+.maincontainer .ShopingcartSec .unitPriceSec .firstItem .qtycart {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.maincontainer .ShopingcartSec .unitPriceSec .firstItem .qtycart input {
+  outline: none;
+  border: none;
+  width: 50px;
+  text-align: center;
+}
+.maincontainer .ShopingcartSec .unitPriceSec .firstItem .qtycart img {
+  border: 1px solid black;
+  padding: 11px;
+}
+.maincontainer .ShopingcartSec .unitPriceSec .firstItem .qtycart img:nth-child(1) {
+  padding: 13px;
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .ShopingcartSec .unitPriceSec .firstItem .delete {
+    display: none;
+  }
+}
+.maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst {
+    display: block;
+  }
+}
+.maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst img {
+  margin-right: 20px;
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst img {
+    width: 100%;
+    margin: 0;
+  }
+}
+.maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 16px;
+  color: #151515;
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst span {
+    display: block;
+    font-size: 28px;
+  }
+}
+.maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #A2A2A2;
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst p {
+    font-size: 20px;
+  }
+}
+.maincontainer .ShopingcartSec .CheckoutPage {
+  flex-basis: 30%;
+  margin-left: 30px;
+  padding: 20px 0;
+}
+@media screen and (max-width: 900px) {
+  .maincontainer .ShopingcartSec .CheckoutPage {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .ShopingcartSec .CheckoutPage {
+    padding: 0px;
+  }
+}
+.maincontainer .ShopingcartSec .CheckoutPage .Optional span:nth-child(1) {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #111010;
+  font-size: 16px;
+  color: #151515;
+}
+.maincontainer .ShopingcartSec .CheckoutPage .Optional span:nth-child(2) {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #111010;
+  font-size: 12px;
+  color: #A7A7A7;
+  margin: 0 52px 0 7px;
+}
+.maincontainer .ShopingcartSec .CheckoutPage .Redeem {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.maincontainer .ShopingcartSec .CheckoutPage .Redeem input {
+  width: 150px;
+  text-align: center;
+  outline: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #111010;
+  font-size: 16px;
+  color: #151515;
+  border: 1px solid black;
+}
+@media screen and (max-width: 900px) {
+  .maincontainer .ShopingcartSec .CheckoutPage .Redeem input {
+    flex-basis: 60%;
+    width: 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .ShopingcartSec .CheckoutPage .Redeem input {
+    flex-basis: 50%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .maincontainer .ShopingcartSec .CheckoutPage .Redeem .button {
+    flex-basis: 40%;
+    margin: 0;
+  }
+}
+.maincontainer .ShopingcartSec .CheckoutPage .Redeem .button button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #0A0A0A;
+  color: #FFFFFF;
+  width: 150px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 900px) {
+  .maincontainer .ShopingcartSec .CheckoutPage .Redeem .button button {
+    width: 80%;
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .ShopingcartSec .CheckoutPage .Redeem .button button {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+.maincontainer .ShopingcartSec .CheckoutPage .Subtotal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.maincontainer .ShopingcartSec .CheckoutPage .Subtotal .ship p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #151515;
+  line-height: 14px;
+}
+.maincontainer .ShopingcartSec .CheckoutPage .Subtotal .ship span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #A7A7A7;
+}
+.maincontainer .ShopingcartSec .CheckoutPage .Subtotal .sar {
+  text-align: right;
+}
+.maincontainer .ShopingcartSec .CheckoutPage .Subtotal .sar p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 16px;
+  color: #151515;
+  line-height: 14px;
+}
+.maincontainer .ShopingcartSec .CheckoutPage .Subtotal .sar span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 12px;
+  color: #A7A7A7;
+}
+.maincontainer .ShopingcartSec .CheckoutPage .VAT {
+  display: flex;
+  justify-content: space-between;
+  margin: 28px 0 15px 0;
+}
+@media screen and (max-width: 900px) {
+  .maincontainer .ShopingcartSec .CheckoutPage .button {
+    width: 80%;
+    margin: auto;
+  }
+}
+.maincontainer .ShopingcartSec .CheckoutPage .button button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #0A0A0A;
+  width: 100%;
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+
+.CheckoutContainer-a {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

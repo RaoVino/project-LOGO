@@ -194,7 +194,8 @@
                     width: 30%;
                 }
                 @media screen and(max-width: 414px) {
-                    width: 60%;
+                    width: 30%;
+                    position: static;
                 }
                 .watch {
                     width: 75px;

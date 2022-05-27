@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Detail Page</title>
+    <title>Cart Page</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -16,7 +16,7 @@
     <header class="headerSec">
         <div class="maincontainer">
             <div class="headLogo">
-                <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+                <a href="#"><img src="./images/logo.png" alt=""></a>
             </div>
             <nav class="navSec">
                 <div class="searchsec">
@@ -31,7 +31,7 @@
                             <a href="#">spaces</a>
                         </li>
                         <li>
-                            <a href="#">products & services</a>
+                            <a href="./productDetail.html">products & services</a>
                         </li>
                         <li>
                             <a href="#">showrooms</a>
@@ -56,126 +56,116 @@
         </div>
 
     </header>
-    <nav class="table">
-        <div class="maincontainer">
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><img src="./images/small-img/greaterArrow.png" alt=""></li>
-                <li><a href="#">table</a></li>
-                <li><img src="./images/small-img/greaterArrow.png" alt=""></li>
-                <li><a href="#">product name</a></li>
-            </ul>
-        </div>
-
-    </nav>
     <section>
         <div class="maincontainer">
-            <div class="productName">
-                <div class="productbig-a">
-                    <img src="./images/small-img/ProductnameBig.png" alt="">
-                </div>
-                <div class="productbig-b">
-                    <img src="./images/small-img/Productname-first.png" alt="">
-                </div>
-                <div class="productbig-c">
-                    <img src="./images/small-img/Productname-second.png" alt="">
-                </div>
-                <div class="productbig-d">
-                    <img src="./images/small-img/Productname-third.png" alt="">
-                </div>
-                <div class="heartcart">
-                    <h4>Product Name</h4>
-                    <span>199,50 SAR</span>
-                    <p>Product Short Description senectus et netus et malesuada fames ac turpis egestas. Vesitbulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae
-                        est. Mauris placerat eleifend </p>
-                    <div class="plus">
-                        <div class="minus">
+            <h4>Shopping Cart</h4>
+            <div class="backbutton">
+                <p><button><img src="./images/small-img/Arrow.png" alt=""></button> Continue Shopping</p>
+            </div>
+            <div class="ShopingcartSec">
+                <div class="unitPriceSec">
+                    <ul class="cartHead">
+                        <li></li>
+                        <li></li>
+                        <li>Unit Price</li>
+                        <li>QTY</li>
+                        <li>Toal SAR</li>
+                    </ul>
+                    <div class="firstItem">
+                        <div class="ItemFirst">
+                            <img src="./images/small-img/cartimg-a.png" alt="">
+                            <span>Product Name</sp>
+                            <p>Lorem Ipsum</p>
+                        </div>
+                        <p>199.00</p>
+                        <div class="qtycart">
                             <img src="./images/small-img/minus.png" alt="">
                             <input type="text" placeholder="1">
                             <img src="./images/small-img/smallplus.png" alt="">
                         </div>
-                        <div class="button">
-                            <button>Add to cart</button>
+                        <p>199.00</p>
+                        <div class="delete">
+                            <img src="./images/small-img/delete.png" alt="">
                         </div>
-                        <i class="fa-regular fa-heart"></i>
                     </div>
-                    <div class="dolor">
-                        <p>Lorem ipsum dolor sit amet,</p>
-                        <p>Lorem ipsum dolor sit amet,</p>
-                        <p>Lorem ipsum dolor sit amet,</p>
+                    <div class="firstItem">
+                        <div class="ItemFirst">
+                            <img src="./images/small-img/cartimg-a.png" alt="">
+                            <span>Product Name</sp>
+                            <p>Lorem Ipsum</p>
+                        </div>
+                        <p>199.00</p>
+                        <div class="qtycart">
+                            <img src="./images/small-img/minus.png" alt="">
+                            <input type="text" placeholder="1">
+                            <img src="./images/small-img/smallplus.png" alt="">
+                        </div>
+                        <p>199.00</p>
+                        <div class="delete">
+                            <img src="./images/small-img/delete.png" alt="">
+                        </div>
+                    </div>
+                    <div class="firstItem">
+                        <div class="ItemFirst">
+                            <img src="./images/small-img/cartimg-a.png" alt="">
+                            <span>Product Name</sp>
+                            <p>Lorem Ipsum</p>
+                        </div>
+                        <p>199.00</p>
+                        <div class="qtycart">
+                            <img src="./images/small-img/minus.png" alt="">
+                            <input type="text" placeholder="1">
+                            <img src="./images/small-img/smallplus.png" alt="">
+                        </div>
+                        <p>199.00</p>
+                        <div class="delete">
+                            <img src="./images/small-img/delete.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="CheckoutPage">
+                    <div class="Optional">
+                        <span>Do you have a voucher?</span>
+                            <span>(Optional)</span>
+                            <img src="./images/small-img/downArrow.png" alt="">
+                        </div>
+                        <div class="Redeem">
+                            <input type="text" placeholder="Enter the code">
+                            <div class="button">
+                                <button>Redeem</button>
+                            </div>
+                        </div>
+                        <div class="Subtotal">
+                            <div class="ship">
+                                <p>Subtotal</p>
+                                <span>shipping</span>
+                            </div>
+                            <div class="sar">
+                                <p>138,00 SAR</p>
+                                <span>5,91 SAR</span>
+                            </div>
+                        </div>
+                        <div class="VAT">
+                            <div class="tot">
+                                <span>Total</span>
+                                <span>(VAT included.)</span>
+                            </div>
+                            <div class="include">
+                                <p>143,91 SAR</p>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button>Safe to checkout</button>
+                        </div>
                     </div>
 
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="maincontainer">
-            <div class="discriptionHead">
-                <span>Description</span>
-                <span>Details</span>
-                <span>Reviews(0)</span>
-            </div>
-            <div class="discriptionpara">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare euismod arcu, ac laoreet metus pulvinar feugiat. Praesent in feugiat ante, a dictum nunc. Pellentesque convallis tortor quis purus finibus aliquet. In hac habitasse
-                    platea dictumst. Proin vestibulum ante ac faucibus tristique. Integer quis efficitur dolor, at dignissim dolor.</p>
-            </div>
-
-        </div>
-
     </section>
     <section class="projects collection Related">
         <div class="maincontainer">
             <div class="project-container">
                 <h3>Related Products</h3>
-                <div class="towerSec">
-                    <div class="mallSec">
-                        <div class="tileImg">
-                            <img src="./images/tileFirst.png" alt="">
-                        </div>
-                        <div class="tower">
-                            <h5>Windsor White Oak</h5>
-                            <span>449.99 SAR</span>
-                            <span>237.99 SAR</span>
-                        </div>
-                    </div>
-                    <div class="mallSec">
-                        <div class="tileImg">
-                            <img src="./images/tileSecond.png" alt="">
-                        </div>
-                        <div class="tower">
-                            <h5>Sicily Grey Décor 30×60</h5>
-                            <span>449.99 SAR</span>
-                            <span>237.99 SAR</span>
-                        </div>
-                    </div>
-                    <div class="mallSec">
-                        <div class="tileImg">
-                            <img src="./images/tileThird.png" alt="">
-                        </div>
-                        <div class="tower">
-                            <h5>Sardinia White</h5>
-                            <span>449.99 SAR</span>
-                            <span>237.99 SAR</span>
-                        </div>
-                    </div>
-                    <div class="mallSec">
-                        <div class="tileImg">
-                            <img src="./images/tilefour.png" alt="">
-                        </div>
-                        <div class="tower">
-                            <h5>Sicily Grey 30×60</h5>
-                            <span>449.99 SAR</span>
-                            <span>237.99 SAR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section class="projects collection Related">
-        <div class="maincontainer">
-            <div class="project-container">
-                <h3>Recently Viewed Products</h3>
                 <div class="towerSec">
                     <div class="mallSec">
                         <div class="tileImg">
@@ -265,7 +255,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
