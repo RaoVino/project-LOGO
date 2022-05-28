@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("http://fonts.cdnfonts.com/css/proxima-nova-2%27");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 .headerSec .maincontainer .headLogo {
   display: flex;
   justify-content: center;
@@ -248,66 +249,176 @@ i {
   }
 }
 
-.newGenerationSec {
-  width: 50%;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.36);
+html {
+  scroll-behavior: smooth;
 }
-@media screen and (max-width: 1155px) {
-  .newGenerationSec {
-    margin: auto;
-    padding: 20px;
-    height: 100%;
-  }
+
+.CheckoutPage {
+  flex-basis: 35%;
+  padding: 30px 20px;
+  background: #FAFAFA;
 }
 @media screen and (max-width: 900px) {
-  .newGenerationSec {
+  .CheckoutPage {
     width: 100%;
-    padding: 20px;
-    margin: 20px;
+    margin: auto;
   }
 }
-.newGenerationSec h3 {
+@media screen and (max-width: 414px) {
+  .CheckoutPage {
+    padding: 10px;
+  }
+}
+.CheckoutPage .Optional span:nth-child(1) {
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   color: #111010;
-  font-size: 32px;
-  color: #FFFFFF;
-  margin: 20px 0;
+  font-size: 16px;
+  color: #151515;
 }
-@media screen and (max-width: 1155px) {
-  .newGenerationSec h3 {
-    margin: 50px;
-    font-size: 42px;
-    text-align: center;
-  }
+.CheckoutPage .Optional span:nth-child(2) {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #111010;
+  font-size: 12px;
+  color: #A7A7A7;
+  margin: 0 52px 0 7px;
+}
+.CheckoutPage .Redeem {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.CheckoutPage .Redeem input {
+  width: 150px;
+  text-align: center;
+  outline: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #111010;
+  font-size: 16px;
+  color: #151515;
+  border: 1px solid black;
 }
 @media screen and (max-width: 900px) {
-  .newGenerationSec h3 {
-    font-size: 32px;
+  .CheckoutPage .Redeem input {
+    flex-basis: 60%;
+    width: 0;
   }
 }
-.newGenerationSec p {
+@media screen and (max-width: 414px) {
+  .CheckoutPage .Redeem input {
+    flex-basis: 50%;
+  }
+}
+.CheckoutPage .Redeem .button {
+  text-align: right;
+}
+@media screen and (max-width: 900px) {
+  .CheckoutPage .Redeem .button {
+    flex-basis: 40%;
+    margin: 0;
+  }
+}
+.CheckoutPage .Redeem .button button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #0A0A0A;
+  color: #FFFFFF;
+  width: 85%;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 900px) {
+  .CheckoutPage .Redeem .button button {
+    width: 80%;
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .CheckoutPage .Redeem .button button {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+.CheckoutPage .Subtotal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.CheckoutPage .Subtotal .ship p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #151515;
+  line-height: 14px;
+}
+.CheckoutPage .Subtotal .ship span {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  color: #ECECEC;
+  font-size: 14px;
+  color: #A7A7A7;
+}
+.CheckoutPage .Subtotal .sar {
+  text-align: right;
+}
+.CheckoutPage .Subtotal .sar p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 16px;
+  color: #151515;
+  line-height: 14px;
+}
+.CheckoutPage .Subtotal .sar span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 12px;
+  color: #A7A7A7;
+}
+.CheckoutPage .VAT {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 0 23px 0;
+}
+.CheckoutPage .button {
+  width: 100%;
+  text-align: center;
 }
 @media screen and (max-width: 900px) {
-  .newGenerationSec p {
+  .CheckoutPage .button {
     width: 100%;
+    margin: auto;
   }
 }
-.newGenerationSec .button button {
-  margin-top: 20px;
-  color: #000000;
-  background-color: #FFFFFF;
+.CheckoutPage .button a {
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #0A0A0A;
+  display: block;
+  color: #FFFFFF;
+  text-transform: capitalize;
 }
-
-html {
-  scroll-behavior: smooth;
+@media screen and (max-width: 900px) {
+  .CheckoutPage .button a {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .productsSec {
@@ -1365,6 +1476,64 @@ footer .maincontainer .copyright p {
   }
 }
 
+.newGenerationSec {
+  width: 50%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.36);
+}
+@media screen and (max-width: 1155px) {
+  .newGenerationSec {
+    margin: auto;
+    padding: 20px;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .newGenerationSec {
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+  }
+}
+.newGenerationSec h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #111010;
+  font-size: 32px;
+  color: #FFFFFF;
+  margin: 20px 0;
+}
+@media screen and (max-width: 1155px) {
+  .newGenerationSec h3 {
+    margin: 50px;
+    font-size: 42px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .newGenerationSec h3 {
+    font-size: 32px;
+  }
+}
+.newGenerationSec p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ECECEC;
+}
+@media screen and (max-width: 900px) {
+  .newGenerationSec p {
+    width: 100%;
+  }
+}
+.newGenerationSec .button button {
+  margin-top: 20px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
 .table {
   margin-bottom: 50px;
   background-color: #000000;
@@ -1683,7 +1852,7 @@ footer .maincontainer .copyright p {
   }
 }
 
-.maincontainer h4 {
+.ShopingCartPage .maincontainer h4 {
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -1691,17 +1860,27 @@ footer .maincontainer .copyright p {
   font-size: 32px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 900px) {
+  .ShopingCartPage .maincontainer h4 {
+    padding: 20px;
+  }
+}
 @media screen and (max-width: 414px) {
-  .maincontainer h4 {
+  .ShopingCartPage .maincontainer h4 {
     text-align: center;
   }
 }
 @media screen and (max-width: 414px) {
-  .maincontainer .backbutton {
+  .ShopingCartPage .maincontainer .backbutton {
     margin-left: 20px;
   }
 }
-.maincontainer .backbutton p {
+@media screen and (max-width: 900px) {
+  .ShopingCartPage .maincontainer .backbutton {
+    padding: 20px;
+  }
+}
+.ShopingCartPage .maincontainer .backbutton p {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1711,71 +1890,75 @@ footer .maincontainer .copyright p {
   align-items: center;
 }
 @media screen and (max-width: 414px) {
-  .maincontainer .backbutton p {
+  .ShopingCartPage .maincontainer .backbutton p {
     display: block;
   }
 }
-.maincontainer .backbutton button {
+.ShopingCartPage .maincontainer .backbutton button {
   background: none;
 }
-.maincontainer .backbutton button img {
+.ShopingCartPage .maincontainer .backbutton button img {
   margin-right: 5px;
 }
-.maincontainer .ShopingcartSec {
+.ShopingCartPage .maincontainer .ShopingcartSec {
   display: flex;
   margin-top: 100px;
+  justify-content: space-between;
 }
 @media screen and (max-width: 900px) {
-  .maincontainer .ShopingcartSec {
+  .ShopingCartPage .maincontainer .ShopingcartSec {
     display: block;
-    padding: 60px;
+    padding: 30px;
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 414px) {
-  .maincontainer .ShopingcartSec {
+  .ShopingCartPage .maincontainer .ShopingcartSec {
     padding: 20px;
     margin-top: 0;
   }
 }
-.maincontainer .ShopingcartSec .unitPriceSec {
-  flex-basis: 65%;
-  padding: 20px 0;
+.ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec {
+  flex-basis: 62%;
+  padding: 20px 10px;
+  background: #FAFAFA;
 }
 @media screen and (max-width: 900px) {
-  .maincontainer .ShopingcartSec .unitPriceSec {
+  .ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec {
     display: block;
   }
 }
-.maincontainer .ShopingcartSec .unitPriceSec .cartHead {
+.ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .cartHead {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 10px;
 }
 @media screen and (max-width: 414px) {
-  .maincontainer .ShopingcartSec .unitPriceSec .cartHead {
+  .ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .cartHead {
     display: none;
   }
 }
-.maincontainer .ShopingcartSec .unitPriceSec .cartHead li {
+.ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .cartHead li {
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   color: #111010;
   font-size: 16px;
 }
-.maincontainer .ShopingcartSec .unitPriceSec .firstItem {
+.ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 414px) {
-  .maincontainer .ShopingcartSec .unitPriceSec .firstItem {
+  .ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem {
     display: block;
   }
 }
-.maincontainer .ShopingcartSec .unitPriceSec .firstItem p {
+.ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem p {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1784,57 +1967,57 @@ footer .maincontainer .copyright p {
   color: #151515;
 }
 @media screen and (max-width: 414px) {
-  .maincontainer .ShopingcartSec .unitPriceSec .firstItem p {
+  .ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem p {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 414px) {
-  .maincontainer .ShopingcartSec .unitPriceSec .firstItem p:nth-child(4) {
+  .ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem p:nth-child(4) {
     display: none;
   }
 }
-.maincontainer .ShopingcartSec .unitPriceSec .firstItem .qtycart {
+.ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .qtycart {
   display: flex;
   align-items: center;
   padding: 5px;
 }
-.maincontainer .ShopingcartSec .unitPriceSec .firstItem .qtycart input {
+.ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .qtycart input {
   outline: none;
   border: none;
   width: 50px;
   text-align: center;
 }
-.maincontainer .ShopingcartSec .unitPriceSec .firstItem .qtycart img {
+.ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .qtycart img {
   border: 1px solid black;
   padding: 11px;
 }
-.maincontainer .ShopingcartSec .unitPriceSec .firstItem .qtycart img:nth-child(1) {
+.ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .qtycart img:nth-child(1) {
   padding: 13px;
 }
 @media screen and (max-width: 414px) {
-  .maincontainer .ShopingcartSec .unitPriceSec .firstItem .delete {
+  .ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .delete {
     display: none;
   }
 }
-.maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst {
+.ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst {
   display: flex;
   align-items: center;
 }
 @media screen and (max-width: 414px) {
-  .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst {
+  .ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst {
     display: block;
   }
 }
-.maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst img {
+.ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst img {
   margin-right: 20px;
 }
 @media screen and (max-width: 414px) {
-  .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst img {
+  .ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst img {
     width: 100%;
     margin: 0;
   }
 }
-.maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst span {
+.ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst span {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1843,12 +2026,12 @@ footer .maincontainer .copyright p {
   color: #151515;
 }
 @media screen and (max-width: 414px) {
-  .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst span {
+  .ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst span {
     display: block;
     font-size: 28px;
   }
 }
-.maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst p {
+.ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst p {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1857,167 +2040,193 @@ footer .maincontainer .copyright p {
   color: #A2A2A2;
 }
 @media screen and (max-width: 414px) {
-  .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst p {
+  .ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .ItemFirst p {
     font-size: 20px;
   }
 }
-.maincontainer .ShopingcartSec .CheckoutPage {
-  flex-basis: 30%;
-  margin-left: 30px;
-  padding: 20px 0;
-}
-@media screen and (max-width: 900px) {
-  .maincontainer .ShopingcartSec .CheckoutPage {
-    width: 90%;
-    margin: auto;
-  }
-}
-@media screen and (max-width: 414px) {
-  .maincontainer .ShopingcartSec .CheckoutPage {
-    padding: 0px;
-  }
-}
-.maincontainer .ShopingcartSec .CheckoutPage .Optional span:nth-child(1) {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  color: #111010;
-  font-size: 16px;
-  color: #151515;
-}
-.maincontainer .ShopingcartSec .CheckoutPage .Optional span:nth-child(2) {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  color: #111010;
-  font-size: 12px;
-  color: #A7A7A7;
-  margin: 0 52px 0 7px;
-}
-.maincontainer .ShopingcartSec .CheckoutPage .Redeem {
+
+.maincontainer .MainCheckoutContainer {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0;
 }
-.maincontainer .ShopingcartSec .CheckoutPage .Redeem input {
-  width: 150px;
-  text-align: center;
-  outline: none;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  color: #111010;
-  font-size: 16px;
-  color: #151515;
-  border: 1px solid black;
+.maincontainer .MainCheckoutContainer .CheckoutContainer {
+  flex-basis: 31%;
+  padding: 20px;
+  background: #FAFAFA;
 }
-@media screen and (max-width: 900px) {
-  .maincontainer .ShopingcartSec .CheckoutPage .Redeem input {
-    flex-basis: 60%;
-    width: 0;
-  }
-}
-@media screen and (max-width: 414px) {
-  .maincontainer .ShopingcartSec .CheckoutPage .Redeem input {
-    flex-basis: 50%;
-  }
-}
-@media screen and (max-width: 900px) {
-  .maincontainer .ShopingcartSec .CheckoutPage .Redeem .button {
-    flex-basis: 40%;
-    margin: 0;
-  }
-}
-.maincontainer .ShopingcartSec .CheckoutPage .Redeem .button button {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  color: #0A0A0A;
-  color: #FFFFFF;
-  width: 150px;
-  text-transform: capitalize;
-}
-@media screen and (max-width: 900px) {
-  .maincontainer .ShopingcartSec .CheckoutPage .Redeem .button button {
-    width: 80%;
-    margin-left: 30px;
-  }
-}
-@media screen and (max-width: 414px) {
-  .maincontainer .ShopingcartSec .CheckoutPage .Redeem .button button {
-    width: 100%;
-    margin-left: 0px;
-  }
-}
-.maincontainer .ShopingcartSec .CheckoutPage .Subtotal {
-  display: flex;
-  justify-content: space-between;
+.maincontainer .MainCheckoutContainer .CheckoutContainer input {
   margin-bottom: 20px;
+  background: #FFFFFF;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid rgba(130, 130, 130, 0.4);
+  outline: none;
 }
-.maincontainer .ShopingcartSec .CheckoutPage .Subtotal .ship p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #151515;
-  line-height: 14px;
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .passwordEmail {
+  display: flex;
+  align-items: center;
 }
-.maincontainer .ShopingcartSec .CheckoutPage .Subtotal .ship span {
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .passwordEmail img {
+  width: 4%;
+  margin-right: 5px;
+}
+.maincontainer .MainCheckoutContainer .paymentSec {
+  padding: 20px;
+  background: #FAFAFA;
+  flex-basis: 31%;
+}
+.maincontainer .MainCheckoutContainer .paymentSec input {
+  margin-bottom: 10px;
+}
+.maincontainer .MainCheckoutContainer .paymentSec .paypal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.maincontainer .MainCheckoutContainer .paymentSec .paypal .paypalFirst {
+  display: flex;
+  align-items: center;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast {
+  padding: 20px;
+  background: #FAFAFA;
+  flex-basis: 35%;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .article p {
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  font-size: 14px;
-  color: #A7A7A7;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  line-height: 21px;
+  margin-bottom: 35px;
 }
-.maincontainer .ShopingcartSec .CheckoutPage .Subtotal .sar {
+.maincontainer .MainCheckoutContainer .CheckoutLast .Article-a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .Article-a .ArticleImg {
+  display: flex;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .Article-a .ArticleImg .Article-b {
+  margin-left: 10px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .Article-a .ArticleImg .Article-b p {
+  margin-bottom: 7px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .Article-a .ArticleImg .Article-b p:nth-child(1) {
+  font-weight: bold;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .Article-a .ArticleImg .Article-b p:nth-child(3) {
+  font-size: larger;
+  font-weight: bold;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .Article-a .ArticleImg .Article-b p:nth-child(2) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 18px;
+  color: rgba(130, 130, 130, 0.85);
+  line-height: 14px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .Article-a .ArticleImg .Article-b p:nth-child(4) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 18px;
+  color: rgba(130, 130, 130, 0.85);
+  line-height: 14px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .WorkedDays {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 16px;
+  color: rgba(130, 130, 130, 0.85);
+  line-height: 14px;
+  margin-bottom: 60px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Subtotal {
+  margin-bottom: 12px;
+  align-items: center;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Subtotal .ship p {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Subtotal .ship span {
+  font-size: 16px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Subtotal .sar span {
+  font-size: 16px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Subtotal .sar p {
+  margin-bottom: 4px;
+  line-height: 20.57px;
+  font-size: 20px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Simply {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(130, 130, 130, 0.85);
+  margin-top: 20px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .VAT span {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 15px;
+  color: rgba(130, 130, 130, 0.85);
+  line-height: 18px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .VAT .tot p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 17px;
+  margin-bottom: 14px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .VAT .include {
   text-align: right;
 }
-.maincontainer .ShopingcartSec .CheckoutPage .Subtotal .sar p {
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .VAT .include p {
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  font-size: 16px;
-  color: #151515;
-  line-height: 14px;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000000;
+  line-height: 21px;
+  margin-bottom: 9px;
 }
-.maincontainer .ShopingcartSec .CheckoutPage .Subtotal .sar span {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  font-size: 12px;
-  color: #A7A7A7;
-}
-.maincontainer .ShopingcartSec .CheckoutPage .VAT {
-  display: flex;
-  justify-content: space-between;
-  margin: 28px 0 15px 0;
-}
-@media screen and (max-width: 900px) {
-  .maincontainer .ShopingcartSec .CheckoutPage .button {
-    width: 80%;
-    margin: auto;
-  }
-}
-.maincontainer .ShopingcartSec .CheckoutPage .button button {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  color: #0A0A0A;
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Redeem input {
   width: 100%;
-  color: #FFFFFF;
-  text-transform: capitalize;
 }
-
-.CheckoutContainer-a {
-  display: flex;
-  flex-direction: column;
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Redeem .button button {
+  width: 90%;
 }
 
 /*# sourceMappingURL=style.css.map */

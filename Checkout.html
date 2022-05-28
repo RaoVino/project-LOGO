@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -55,27 +57,205 @@
         </div>
 
     </header>
-    <div class="maincontainer">
-        <h4>Check Out</h4>
-        <div class="backbutton">
-            <p><button><img src="./images/small-img/Arrow.png" alt=""></button> Continue Shopping</p>
-        </div>
-        <div class="MainCheckoutContainer">
-            <div class="CheckoutContainer-a">
-                <div class="mr-mrs">
-                    <label for="">Mrs.</label>
-                    <input type="radio" name="Mrs.">
-                    <label for="">Mr.</label>
-                    <input type="radio" name="Mrs.">
+    <section>
+        <div class="maincontainer">
+            <h4>Check Out</h4>
+            <div class="backbutton">
+                <p><button><img src="./images/small-img/Arrow.png" alt=""></button> Continue Shopping</p>
+            </div>
+            <div class="MainCheckoutContainer">
+                <div class="CheckoutContainer">
+                    <div class="AccountCreate">
+                        <div class="firstName">
+                            <input type="text" placeholder="First name*">
+                        </div>
+                        <div class="lastName">
+                            <input type="text" placeholder="Last name*">
+                        </div>
+                        <div class="email">
+                            <input type="Email" placeholder="E-Mail">
+                        </div>
+                        <div class="street">
+                            <input type="address" placeholder="Street*">
+                            <input type="address" placeholder="Houses*">
+                        </div>
+                        <div class="pincode">
+                            <input type="number" placeholder="PostCode*">
+                            <input type="address" placeholder="Location*">
+                        </div>
+                        <select>
+                            <option value="">Select Country</option>
+                        </select>
+                        <div class="phoneNum">
+                            <input type="number" placeholder="Phone Number">
+                            <p>*Required field</p>
+                        </div>
+                        <div class="tickBox">
+                            <input type="checkbox" id="tick">
+                            <label for="tick">Create a customer account now and benefit from many advantages.</label>
+                        </div>
+                        <div class="passwordEmail">
+                            <img src="./images/small-img/icon-info.png" alt="">
+                            <span>The password will be sent to you by email</span>
+                        </div>
+                    </div>
+                    <div class="Addresssave">
+                        <div class="ShipingAddr">
+                            <input type="checkbox" id="diff">
+                            <label for="diff">Shipping Address is Different</label>
+                        </div>
+                        <div class="firstName">
+                            <input type="text" placeholder="First name*">
+                        </div>
+                        <div class="lastName">
+                            <input type="text" placeholder="Last name*">
+                        </div>
+                        <div class="email">
+                            <input type="Email" placeholder="E-Mail">
+                        </div>
+                        <div class="street">
+                            <input type="address" placeholder="Street*">
+                            <input type="address" placeholder="Houses*">
+                        </div>
+                        <div class="pincode">
+                            <input type="number" placeholder="PostCode*">
+                            <input type="address" placeholder="Location*">
+                        </div>
+                        <select>
+                            <option value="">Select Country</option>
+                        </select>
+                    </div>
                 </div>
-                <input type="text" placeholder="First name">
-                <input type="text" placeholder="Last name">
-                <input type="Email" name="" id="">
+                <div class="paymentSec">
+                    <div class="paypal">
+                        <div class="paypalFirst">
+                            <img src="./images/small-img/paypal.png" alt="">
+                            <label for="pay">Pay Pal</label>
 
+                        </div>
+                        <div class="paypalCheck">
+                            <input type="checkbox" id="pay">
+                        </div>
+                    </div>
+                    <div class="paypal">
+                        <div class="paypalFirst">
+                            <img src="./images/small-img/paypal.png" alt="">
+                            <label for="pal">Pay Pal Plus</label>
+                        </div>
+                        <div class="paypalCheck">
+                            <input type="checkbox" name="" id="pal">
+                        </div>
+                    </div>
+                    <div class="paypal">
+                        <div class="paypalFirst">
+                            <img src="./images/small-img/paypal.png" alt="">
+                            <label for="bank">Investment Bank</label>
+                        </div>
+                        <div class="paypalCheck">
+                            <input type="checkbox" name="" id="bank">
+                        </div>
+                    </div>
+                    <input type="number" placeholder="Credit card number*">
+                    <div class="creditCard">
+                        <input type="number" placeholder="Expiry Date*">
+                        <input type="number" placeholder="CVC / CVV*">
+                    </div>
+                    <input type="text" placeholder="Name of Cardholder*">
+                </div>
+                <div class="CheckoutLast">
+                    <div class="article">
+                        <p>Article</p>
+                        <p>Total SAR</p>
+                    </div>
+                    <div class="Article-a">
+                        <div class="ArticleImg">
+                            <img src="./images/small-img/cartimg-a.png" alt="">
+                            <div class="Article-b">
+                                <p>1x</p>
+                                <p>Lorem</p>
+                                <p>Loream ipsum</p>
+                                <p>Ipsum</p>
+                            </div>
+                        </div>
+                        <div class="ArticlePrice">
+                            <p>690.00</p>
+                        </div>
+                    </div>
+                    <div class="Article-a">
+                        <div class="ArticleImg">
+                            <img src="./images/small-img/cartimg-a.png" alt="">
+                            <div class="Article-b">
+                                <p>1x</p>
+                                <p>Lorem</p>
+                                <p>Loream ipsum</p>
+                                <p>Ipsum</p>
+                            </div>
+                        </div>
+                        <div class="ArticlePrice">
+                            <p>690.00</p>
+                        </div>
+                    </div>
+                    <div class="Article-a">
+                        <div class="ArticleImg">
+                            <img src="./images/small-img/cartimg-a.png" alt="">
+                            <div class="Article-b">
+                                <p>1x</p>
+                                <p>Lorem</p>
+                                <p>Loream ipsum</p>
+                                <p>Ipsum</p>
+                            </div>
+                        </div>
+                        <div class="ArticlePrice">
+                            <p>690.00</p>
+                        </div>
+                    </div>
+                    <div class="CheckoutPage CheckedOutLast">
+                        <div class="Optional">
+                            <span>Do you have a voucher?</span>
+                            <span>(Optional)</span>
+                        </div>
+                        <div class="Redeem">
+                            <input type="text" placeholder="Enter the code">
+                            <div class="button">
+                                <button>Redeem</button>
+                            </div>
+                        </div>
+                        <div class="Subtotal">
+                            <div class="ship">
+                                <p>Subtotal</p>
+                                <span>shippment</span>
+                            </div>
+                            <div class="sar">
+                                <p>2070.00</p>
+                                <span>103.50</span>
+                            </div>
+                        </div>
+                        <p class="WorkedDays">Delivery time 2 - 4 working days</p>
+                        <div class="button">
+                            <a href="#">Checkout</a>
+                        </div>
+                        <div class="Simply">
+                            <input type="checkbox" name="" id="TC">
+                            <label for="TC">T&C is simply dummy text of the printing and typesetting industry</label>
+                        </div>
+                        <div class="VAT">
+                            <div class="tot">
+                                <p>Total</p>
+                                <span>(VAT)</span>
+                            </div>
+                            <div class="include">
+                                <p>143,910.00</p>
+                                <span>7,195.00</sp>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
-    </div>
+    </section>
+
+
     <footer>
         <div class="maincontainer">
             <div class="footerSec">

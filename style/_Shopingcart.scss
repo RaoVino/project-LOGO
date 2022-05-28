@@ -1,260 +1,151 @@
-    .maincontainer {
-        h4 {
-            @include header;
-            font-size: 32px;
-            margin-bottom: 10px;
-            @media screen and (max-width: 414px) {
-                text-align: center;
-            }
-        }
-        .backbutton {
-            @media screen and (max-width: 414px) {
-                margin-left: 20px;
-            }
-            p {
-                @include paragraph;
-                font-size: 18px;
-                display: flex;
-                align-items: center;
-                @media screen and (max-width: 414px) {
-                    display: block;
-                }
-            }
-            button {
-                background: none;
-                img {
-                    margin-right: 5px;
-                }
-            }
-        }
-        .ShopingcartSec {
-            display: flex;
-            margin-top: 100px;
-            @media screen and (max-width: 900px) {
-                display: block;
-                padding: 60px;
-            }
-            @media screen and (max-width: 414px) {
-                padding: 20px;
-                margin-top: 0;
-            }
-            .unitPriceSec {
-                flex-basis: 65%;
-                padding: 20px 0;
-                @media screen and (max-width: 900px) {
-                    display: block;
-                }
-                .cartHead {
-                    display: flex;
-                    justify-content: space-evenly;
-                    margin-bottom: 30px;
-                    padding: 10px;
-                    @media screen and (max-width: 414px) {
-                        display: none;
-                    }
-                    li {
-                        // margin-right: 84px;
-                        @include header;
-                        font-size: 16px;
-                    }
-                }
-                .firstItem {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 10px;
-                    @media screen and (max-width: 414px) {
-                        display: block;
-                    }
-                    p {
-                        @include paragraph;
-                        font-size: 16px;
-                        color: #151515;
-                        @media screen and (max-width: 414px) {
-                            font-size: 22px;
-                        }
-                        &:nth-child(4) {
-                            @media screen and (max-width: 414px) {
-                                display: none;
-                            }
-                        }
-                    }
-                    .qtycart {
-                        display: flex;
-                        align-items: center;
-                        padding: 5px;
-                        input {
-                            outline: none;
-                            border: none;
-                            width: 50px;
-                            text-align: center;
-                        }
-                        img {
-                            border: 1px solid black;
-                            padding: 11px;
-                            &:nth-child(1) {
-                                padding: 13px;
-                            }
-                        }
-                    }
-                    .delete {
-                        @media screen and (max-width: 414px) {
-                            display: none;
-                        }
-                    }
-                    .ItemFirst {
-                        display: flex;
-                        align-items: center;
-                        @media screen and (max-width: 414px) {
-                            display: block;
-                        }
-                        img {
-                            margin-right: 20px;
-                            @media screen and (max-width: 414px) {
-                                width: 100%;
-                                margin: 0;
-                            }
-                        }
-                        span {
-                            @include paragraph;
-                            font-size: 16px;
-                            color: #151515;
-                            @media screen and (max-width: 414px) {
-                                display: block;
-                                font-size: 28px;
-                            }
-                        }
-                        p {
-                            @include paragraph;
-                            font-size: 14px;
-                            color: #A2A2A2;
-                            @media screen and (max-width: 414px) {
-                                font-size: 20px;
-                            }
-                        }
-                    }
-                }
-            }
-            .CheckoutPage {
-                flex-basis: 30%;
-                margin-left: 30px;
-                padding: 20px 0;
-                @media screen and (max-width: 900px) {
-                    width: 90%;
-                    margin: auto;
-                }
-                @media screen and (max-width: 414px) {
-                    padding: 0px;
-                }
-                .Optional {
-                    span {
-                        &:nth-child(1) {
-                            @include header;
-                            font-size: 16px;
-                            color: #151515;
-                        }
-                        &:nth-child(2) {
-                            @include header;
-                            font-size: 12px;
-                            color: #A7A7A7;
-                            margin: 0 52px 0 7px;
-                        }
-                    }
-                }
-                .Redeem {
-                    display: flex;
-                    justify-content: space-between;
-                    margin: 30px 0;
-                    input {
-                        width: 150px;
-                        text-align: center;
-                        outline: none;
-                        @include header;
-                        font-size: 16px;
-                        color: #151515;
-                        border: 1px solid black;
-                        @media screen and (max-width: 900px) {
-                            flex-basis: 60%;
-                            width: 0;
-                        }
-                        @media screen and (max-width: 414px) {
-                            flex-basis: 50%;
-                        }
-                    }
-                    .button {
-                        @media screen and (max-width: 900px) {
-                            flex-basis: 40%;
-                            margin: 0;
-                        }
-                        button {
-                            @include list-a;
-                            color: $white;
-                            width: 150px;
-                            text-transform: capitalize;
-                            @media screen and (max-width: 900px) {
-                                width: 80%;
-                                margin-left: 30px;
-                            }
-                            @media screen and (max-width: 414px) {
-                                width: 100%;
-                                margin-left: 0px;
-                            }
-                        }
-                    }
-                }
-                .Subtotal {
-                    display: flex;
-                    justify-content: space-between;
-                    margin-bottom: 20px;
-                    .ship {
-                        p {
-                            font-family: 'Poppins';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 16px;
-                            color: #151515;
-                            line-height: 14px;
-                        }
-                        span {
-                            @include paragraph;
-                            font-size: 14px;
-                            color: #A7A7A7;
-                        }
-                    }
-                    .sar {
-                        text-align: right;
-                        p {
-                            @include paragraph;
-                            font-size: 16px;
-                            color: #151515;
-                            line-height: 14px;
-                        }
-                        span {
-                            @include paragraph;
-                            font-size: 12px;
-                            color: #A7A7A7;
-                        }
-                    }
-                }
-                .VAT {
-                    display: flex;
-                    justify-content: space-between;
-                    margin: 28px 0 15px 0;
-                    .tot {}
-                    .include {}
-                }
-                .button {
-                    @media screen and (max-width: 900px) {
-                        width: 80%;
-                        margin: auto;
-                    }
-                    button {
-                        @include list-a;
-                        width: 100%;
-                        color: $white;
-                        text-transform: capitalize;
-                    }
-                }
-            }
-        }
-    }
+   .ShopingCartPage {
+       .maincontainer {
+           h4 {
+               @include header;
+               font-size: 32px;
+               margin-bottom: 10px;
+               @media screen and (max-width: 900px) {
+                   padding: 20px;
+               }
+               @media screen and (max-width: 414px) {
+                   text-align: center;
+               }
+           }
+           .backbutton {
+               @media screen and (max-width: 414px) {
+                   margin-left: 20px;
+               }
+               @media screen and (max-width: 900px) {
+                   padding: 20px;
+               }
+               p {
+                   @include paragraph;
+                   font-size: 18px;
+                   display: flex;
+                   align-items: center;
+                   @media screen and (max-width: 414px) {
+                       display: block;
+                   }
+               }
+               button {
+                   background: none;
+                   img {
+                       margin-right: 5px;
+                   }
+               }
+           }
+           .ShopingcartSec {
+               display: flex;
+               margin-top: 100px;
+               justify-content: space-between;
+               @media screen and (max-width: 900px) {
+                   display: block;
+                   padding: 30px;
+                   margin-top: 50px;
+               }
+               @media screen and (max-width: 414px) {
+                   padding: 20px;
+                   margin-top: 0;
+               }
+               .unitPriceSec {
+                   flex-basis: 62%;
+                   padding: 20px 10px;
+                   background: #FAFAFA;
+                   @media screen and (max-width: 900px) {
+                       display: block;
+                   }
+                   .cartHead {
+                       display: flex;
+                       justify-content: space-evenly;
+                       margin-bottom: 20px;
+                       padding: 10px;
+                       @media screen and (max-width: 414px) {
+                           display: none;
+                       }
+                       li {
+                           // margin-right: 84px;
+                           @include header;
+                           font-size: 16px;
+                       }
+                   }
+                   .firstItem {
+                       display: flex;
+                       justify-content: space-between;
+                       align-items: center;
+                       padding: 10px;
+                       margin-bottom: 20px;
+                       @media screen and (max-width: 414px) {
+                           display: block;
+                       }
+                       p {
+                           @include paragraph;
+                           font-size: 16px;
+                           color: #151515;
+                           @media screen and (max-width: 414px) {
+                               font-size: 22px;
+                           }
+                           &:nth-child(4) {
+                               @media screen and (max-width: 414px) {
+                                   display: none;
+                               }
+                           }
+                       }
+                       .qtycart {
+                           display: flex;
+                           align-items: center;
+                           padding: 5px;
+                           input {
+                               outline: none;
+                               border: none;
+                               width: 50px;
+                               text-align: center;
+                           }
+                           img {
+                               border: 1px solid black;
+                               padding: 11px;
+                               &:nth-child(1) {
+                                   padding: 13px;
+                               }
+                           }
+                       }
+                       .delete {
+                           @media screen and (max-width: 414px) {
+                               display: none;
+                           }
+                       }
+                       .ItemFirst {
+                           display: flex;
+                           align-items: center;
+                           @media screen and (max-width: 414px) {
+                               display: block;
+                           }
+                           img {
+                               margin-right: 20px;
+                               @media screen and (max-width: 414px) {
+                                   width: 100%;
+                                   margin: 0;
+                               }
+                           }
+                           span {
+                               @include paragraph;
+                               font-size: 16px;
+                               color: #151515;
+                               @media screen and (max-width: 414px) {
+                                   display: block;
+                                   font-size: 28px;
+                               }
+                           }
+                           p {
+                               @include paragraph;
+                               font-size: 14px;
+                               color: #A2A2A2;
+                               @media screen and (max-width: 414px) {
+                                   font-size: 20px;
+                               }
+                           }
+                       }
+                   }
+               }
+           }
+       }
+   }

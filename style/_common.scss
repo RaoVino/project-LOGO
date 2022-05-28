@@ -46,50 +46,136 @@ i {
     }
 }
 
-.newGenerationSec {
-    width: 50%;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.36);
-    @media screen and(max-width: 1155px) {
-        margin: auto;
-        padding: 20px;
-        height: 100%;
-    }
-    @media screen and(max-width: 900px) {
-        width: 100%;
-        padding: 20px;
-        margin: 20px;
-    }
-    h3 {
-        @include header;
-        font-size: 32px;
-        color: $white;
-        margin: 20px 0;
-        @media screen and(max-width: 1155px) {
-            margin: 50px;
-            font-size: 42px;
-            text-align: center;
-        }
-        @media screen and(max-width: 900px) {
-            font-size: 32px;
-        }
-    }
-    p {
-        @include paragraph;
-        color: $bannerPara;
-        @media screen and(max-width: 900px) {
-            width: 100%;
-        }
-    }
-    .button {
-        button {
-            margin-top: 20px;
-            color: $black;
-            background-color: $white;
-        }
-    }
-}
-
 html {
     scroll-behavior: smooth;
+}
+
+.CheckoutPage {
+    flex-basis: 35%;
+    padding: 30px 20px;
+    background: #FAFAFA;
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        margin: auto;
+    }
+    @media screen and (max-width: 414px) {
+        padding: 10px;
+    }
+    .Optional {
+        span {
+            &:nth-child(1) {
+                @include header;
+                font-size: 16px;
+                color: #151515;
+            }
+            &:nth-child(2) {
+                @include header;
+                font-size: 12px;
+                color: #A7A7A7;
+                margin: 0 52px 0 7px;
+            }
+        }
+    }
+    .Redeem {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+        input {
+            width: 150px;
+            text-align: center;
+            outline: none;
+            @include header;
+            font-size: 16px;
+            color: #151515;
+            border: 1px solid black;
+            @media screen and (max-width: 900px) {
+                flex-basis: 60%;
+                width: 0;
+            }
+            @media screen and (max-width: 414px) {
+                flex-basis: 50%;
+            }
+        }
+        .button {
+            text-align: right;
+            @media screen and (max-width: 900px) {
+                flex-basis: 40%;
+                margin: 0;
+            }
+            button {
+                @include list-a;
+                color: $white;
+                width: 85%;
+                text-transform: capitalize;
+                @media screen and (max-width: 900px) {
+                    width: 80%;
+                    margin-left: 30px;
+                }
+                @media screen and (max-width: 414px) {
+                    width: 100%;
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+    .Subtotal {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .ship {
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: #151515;
+                line-height: 14px;
+            }
+            span {
+                @include paragraph;
+                font-size: 14px;
+                color: #A7A7A7;
+            }
+        }
+        .sar {
+            text-align: right;
+            p {
+                @include paragraph;
+                font-size: 16px;
+                color: #151515;
+                line-height: 14px;
+            }
+            span {
+                @include paragraph;
+                font-size: 12px;
+                color: #A7A7A7;
+            }
+        }
+    }
+    .VAT {
+        display: flex;
+        justify-content: space-between;
+        margin: 45px 0 23px 0;
+        .tot {}
+        .include {}
+    }
+    .button {
+        width: 100%;
+        text-align: center;
+        @media screen and (max-width: 900px) {
+            width: 100%;
+            margin: auto;
+        }
+        a {
+            width: 100%;
+            @include list-a;
+            display: block;
+            color: $white;
+            text-transform: capitalize;
+            @media screen and (max-width: 900px) {
+                width: 80%;
+                margin: auto;
+            }
+        }
+    }
 }

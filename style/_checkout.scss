@@ -1,4 +1,181 @@
-.CheckoutContainer-a {
-    display: flex;
-    flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+.maincontainer {
+    .MainCheckoutContainer {
+        display: flex;
+        justify-content: space-between;
+        .CheckoutContainer {
+            flex-basis: 31%;
+            padding: 20px;
+            background: #FAFAFA;
+            input {
+                margin-bottom: 20px;
+                background: #FFFFFF;
+                padding: 10px;
+                width: 100%;
+                border: 1px solid rgba(130, 130, 130, 0.4);
+                outline: none;
+            }
+            .AccountCreate {
+                .passwordEmail {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 4%;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .paymentSec {
+            padding: 20px;
+            background: #FAFAFA;
+            flex-basis: 31%;
+            input {
+                margin-bottom: 10px;
+            }
+            .paypal {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .paypalFirst {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .CheckoutLast {
+            padding: 20px;
+            background: #FAFAFA;
+            flex-basis: 35%;
+            .article {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p {
+                    font-family: 'Inter', sans-serif;
+                    @include paragraph;
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: $black;
+                    line-height: 21px;
+                    margin-bottom: 35px;
+                }
+            }
+            .Article-a {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 40px;
+                .ArticleImg {
+                    display: flex;
+                    .Article-b {
+                        margin-left: 10px;
+                        p {
+                            margin-bottom: 7px;
+                            &:nth-child(1) {
+                                font-weight: bold;
+                            }
+                            &:nth-child(3) {
+                                font-size: larger;
+                                font-weight: bold;
+                            }
+                            &:nth-child(2) {
+                                @include paragraph;
+                                font-size: 18px;
+                                color: rgba(130, 130, 130, 0.85);
+                                line-height: 14px;
+                            }
+                            &:nth-child(4) {
+                                @include paragraph;
+                                font-size: 18px;
+                                color: rgba(130, 130, 130, 0.85);
+                                line-height: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            .CheckedOutLast {
+                .WorkedDays {
+                    @include paragraph;
+                    font-size: 16px;
+                    color: rgba(130, 130, 130, 0.85);
+                    line-height: 14px;
+                    margin-bottom: 60px;
+                }
+                .Subtotal {
+                    margin-bottom: 12px;
+                    align-items: center;
+                    .ship {
+                        p {
+                            margin-bottom: 10px;
+                            font-size: 22px;
+                        }
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                    .sar {
+                        span {
+                            font-size: 16px;
+                        }
+                        p {
+                            margin-bottom: 4px;
+                            line-height: 20.57px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .Simply {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: rgba(130, 130, 130, 0.85);
+                    margin-top: 20px;
+                }
+                .VAT {
+                    span {
+                        font-family: 'Inter', sans-serif;
+                        @include paragraph;
+                        font-size: 15px;
+                        color: rgba(130, 130, 130, 0.85);
+                        line-height: 18px;
+                    }
+                    .tot {
+                        p {
+                            @include paragraph;
+                            font-size: 20px;
+                            color: $black;
+                            font-weight: 500;
+                            line-height: 17px;
+                            margin-bottom: 14px;
+                        }
+                    }
+                    .include {
+                        text-align: right;
+                        p {
+                            font-family: 'Inter', sans-serif;
+                            @include paragraph;
+                            font-weight: 500;
+                            font-size: 22px;
+                            color: $black;
+                            line-height: 21px;
+                            margin-bottom: 9px;
+                        }
+                    }
+                }
+                .Redeem {
+                    input {
+                        width: 100%;
+                    }
+                    .button {
+                        button {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
