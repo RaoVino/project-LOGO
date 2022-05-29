@@ -172,13 +172,15 @@
                     }
                     .tickBox {
                         margin: 20px 0;
+                        display: flex;
                         label {
                             font-family: 'Inter';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 15px;
-                            line-height: 18px;
+                            line-height: 20px;
                             color: $black;
+                            margin-left: 10px;
                         }
                     }
                     .phoneNum {

@@ -2235,14 +2235,16 @@ footer .maincontainer .copyright p {
 }
 .maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .tickBox {
   margin: 20px 0;
+  display: flex;
 }
 .maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .tickBox label {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 18px;
+  line-height: 20px;
   color: #000000;
+  margin-left: 10px;
 }
 .maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .phoneNum input::-webkit-outer-spin-button,
 .maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .phoneNum input::-webkit-inner-spin-button {
