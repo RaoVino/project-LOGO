@@ -82,8 +82,8 @@ html {
         margin: 30px 0;
         input {
             width: 150px;
-            text-align: center;
             outline: none;
+            padding: 10px 0 10px 10px;
             @include header;
             font-size: 16px;
             color: #151515;
@@ -113,7 +113,8 @@ html {
                 }
                 @media screen and (max-width: 414px) {
                     width: 100%;
-                    margin-left: 0px;
+                    margin-left: 0;
+                    margin-top: 0;
                 }
             }
         }

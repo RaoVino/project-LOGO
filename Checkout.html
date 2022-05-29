@@ -66,6 +66,16 @@
             <div class="MainCheckoutContainer">
                 <div class="CheckoutContainer">
                     <div class="AccountCreate">
+                        <div class="mrs-mr">
+                            <div class="MR">
+                                <input type="radio" name="male" id="html" value="HTML">
+                                <span>Mrs.</span>
+                            </div>
+                            <div class="MR">
+                                <input type="radio" name="male" id="css" value="CSS">
+                                <span>Mr.</span>
+                            </div>
+                        </div>
                         <div class="firstName">
                             <input type="text" placeholder="First name*">
                         </div>
@@ -99,7 +109,7 @@
                             <span>The password will be sent to you by email</span>
                         </div>
                     </div>
-                    <div class="Addresssave">
+                    <div class="AccountCreate">
                         <div class="ShipingAddr">
                             <input type="checkbox" id="diff">
                             <label for="diff">Shipping Address is Different</label>
@@ -109,9 +119,6 @@
                         </div>
                         <div class="lastName">
                             <input type="text" placeholder="Last name*">
-                        </div>
-                        <div class="email">
-                            <input type="Email" placeholder="E-Mail">
                         </div>
                         <div class="street">
                             <input type="address" placeholder="Street*">
@@ -129,9 +136,10 @@
                 <div class="paymentSec">
                     <div class="paypal">
                         <div class="paypalFirst">
-                            <img src="./images/small-img/paypal.png" alt="">
+                            <div class="paypalImg">
+                                <img src="./images/small-img/paypal.png" alt="">
+                            </div>
                             <label for="pay">Pay Pal</label>
-
                         </div>
                         <div class="paypalCheck">
                             <input type="checkbox" id="pay">
@@ -139,7 +147,9 @@
                     </div>
                     <div class="paypal">
                         <div class="paypalFirst">
-                            <img src="./images/small-img/paypal.png" alt="">
+                            <div class="paypalImg">
+                                <img src="./images/small-img/paypal.png" alt="">
+                            </div>
                             <label for="pal">Pay Pal Plus</label>
                         </div>
                         <div class="paypalCheck">
@@ -148,19 +158,24 @@
                     </div>
                     <div class="paypal">
                         <div class="paypalFirst">
-                            <img src="./images/small-img/paypal.png" alt="">
+                            <div class="paypalImg">
+                                <img src="./images/small-img/paypal.png" alt="">
+                            </div>
                             <label for="bank">Investment Bank</label>
                         </div>
                         <div class="paypalCheck">
                             <input type="checkbox" name="" id="bank">
                         </div>
                     </div>
-                    <input type="number" placeholder="Credit card number*">
-                    <div class="creditCard">
-                        <input type="number" placeholder="Expiry Date*">
-                        <input type="number" placeholder="CVC / CVV*">
+                    <div class="CC">
+                        <input type="number" placeholder="Credit card number*">
+                        <div class="creditCard">
+                            <input type="number" placeholder="Expiry Date*">
+                            <input type="number" placeholder="CVC / CVV*">
+                        </div>
+                        <input type="text" placeholder="Name of Cardholder*">
                     </div>
-                    <input type="text" placeholder="Name of Cardholder*">
+
                 </div>
                 <div class="CheckoutLast">
                     <div class="article">
@@ -246,7 +261,7 @@
                             <div class="include">
                                 <p>143,910.00</p>
                                 <span>7,195.00</sp>
-                            </div>
+                            </div>                                        
                         </div>
                     </div>
                 </div>

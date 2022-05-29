@@ -293,8 +293,8 @@ html {
 }
 .CheckoutPage .Redeem input {
   width: 150px;
-  text-align: center;
   outline: none;
+  padding: 10px 0 10px 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -343,7 +343,8 @@ html {
 @media screen and (max-width: 414px) {
   .CheckoutPage .Redeem .button button {
     width: 100%;
-    margin-left: 0px;
+    margin-left: 0;
+    margin-top: 0;
   }
 }
 .CheckoutPage .Subtotal {
@@ -2045,9 +2046,75 @@ footer .maincontainer .copyright p {
   }
 }
 
+.maincontainer h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #111010;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 900px) {
+  .maincontainer h4 {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .maincontainer h4 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .backbutton {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .maincontainer .backbutton {
+    padding: 20px;
+  }
+}
+.maincontainer .backbutton p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .backbutton p {
+    display: block;
+  }
+}
+.maincontainer .backbutton button {
+  background: none;
+}
+.maincontainer .backbutton button img {
+  margin-right: 5px;
+}
+.maincontainer .backbutton {
+  background: none;
+}
 .maincontainer .MainCheckoutContainer {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
+}
+@media screen and (max-width: 900px) {
+  .maincontainer .MainCheckoutContainer {
+    display: block;
+    padding: 30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .MainCheckoutContainer {
+    display: block;
+    padding: 20px;
+    margin-top: 10px;
+  }
 }
 .maincontainer .MainCheckoutContainer .CheckoutContainer {
   flex-basis: 31%;
@@ -2062,30 +2129,217 @@ footer .maincontainer .copyright p {
   border: 1px solid rgba(130, 130, 130, 0.4);
   outline: none;
 }
+.maincontainer .MainCheckoutContainer .CheckoutContainer input::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(130, 130, 130, 0.85);
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer input[type=checkbox] {
+  margin-bottom: 0;
+  width: initial;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer input[type=radio] {
+  margin-bottom: 0;
+  width: initial;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer select {
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid rgba(130, 130, 130, 0.4);
+  outline: none;
+  color: rgba(130, 130, 130, 0.85);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .mrs-mr {
+  display: flex;
+  margin-bottom: 20px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .mrs-mr .MR input[type=radio] {
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid color rgba(130, 130, 130, 0.85);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .mrs-mr .MR input[type=radio]:focus {
+  outline: none;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .mrs-mr .MR input[type=radio]:checked {
+  background-color: #000000;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .mrs-mr .MR input[type=radio]:checked ~ span {
+  color: white;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .mrs-mr .MR span:first-of-type {
+  position: relative;
+  left: -40px;
+  top: -14px;
+  font-size: 15px;
+  color: #000000;
+  cursor: pointer;
+}
 .maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .passwordEmail {
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 .maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .passwordEmail img {
   width: 4%;
   margin-right: 5px;
 }
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .passwordEmail span {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #828282;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .street {
+  display: flex;
+  justify-content: space-between;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .street input {
+  flex-basis: 60%;
+  width: 100%;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .street input:nth-child(2) {
+  flex-basis: 38%;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .pincode {
+  display: flex;
+  justify-content: space-between;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .pincode input::-webkit-outer-spin-button,
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .pincode input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .pincode input {
+  flex-basis: 37%;
+  width: 100%;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .pincode input:nth-child(2) {
+  flex-basis: 60%;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .tickBox {
+  margin: 20px 0;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .tickBox label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .phoneNum input::-webkit-outer-spin-button,
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .phoneNum input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .phoneNum input {
+  margin-bottom: 4px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .phoneNum p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(130, 130, 130, 0.85);
+  margin-bottom: 20px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .ShipingAddr {
+  margin: 20px 0;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate:nth-child(2) {
+  margin-top: 30px;
+}
 .maincontainer .MainCheckoutContainer .paymentSec {
-  padding: 20px;
-  background: #FAFAFA;
   flex-basis: 31%;
 }
+.maincontainer .MainCheckoutContainer .paymentSec input::-webkit-outer-spin-button,
+.maincontainer .MainCheckoutContainer .paymentSec input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.maincontainer .MainCheckoutContainer .paymentSec .CC {
+  background: #FAFAFA;
+  padding: 30px 20px;
+}
 .maincontainer .MainCheckoutContainer .paymentSec input {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid rgba(130, 130, 130, 0.4);
+  outline: none;
+}
+.maincontainer .MainCheckoutContainer .paymentSec input::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(130, 130, 130, 0.85);
+}
+.maincontainer .MainCheckoutContainer .paymentSec input[type=checkbox] {
+  margin-bottom: 0;
+  width: initial;
+}
+.maincontainer .MainCheckoutContainer .paymentSec input[type=radio] {
+  margin-bottom: 0;
+  width: initial;
+}
+.maincontainer .MainCheckoutContainer .paymentSec .creditCard {
+  display: flex;
+  justify-content: space-between;
+}
+.maincontainer .MainCheckoutContainer .paymentSec .creditCard input {
+  flex-basis: 37%;
+  width: 100%;
+}
+.maincontainer .MainCheckoutContainer .paymentSec .creditCard input:nth-child(2) {
+  flex-basis: 60%;
 }
 .maincontainer .MainCheckoutContainer .paymentSec .paypal {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 10px;
+  background: #FAFAFA;
+  padding: 30px 20px;
 }
 .maincontainer .MainCheckoutContainer .paymentSec .paypal .paypalFirst {
   display: flex;
   align-items: center;
+  font-family: "Proxima Nova";
+}
+.maincontainer .MainCheckoutContainer .paymentSec .paypal .paypalFirst .paypalImg {
+  border: 1px solid rgba(130, 130, 130, 0.85);
+}
+.maincontainer .MainCheckoutContainer .paymentSec .paypal .paypalFirst .paypalImg img {
+  width: 100%;
+}
+.maincontainer .MainCheckoutContainer .paymentSec .paypal .paypalFirst label {
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.85);
 }
 .maincontainer .MainCheckoutContainer .CheckoutLast {
   padding: 20px;
@@ -2113,7 +2367,7 @@ footer .maincontainer .copyright p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .maincontainer .MainCheckoutContainer .CheckoutLast .Article-a .ArticleImg {
   display: flex;
@@ -2148,6 +2402,9 @@ footer .maincontainer .copyright p {
   font-size: 18px;
   color: rgba(130, 130, 130, 0.85);
   line-height: 14px;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast {
+  padding: 0 20px;
 }
 .maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .WorkedDays {
   font-style: normal;
@@ -2186,6 +2443,9 @@ footer .maincontainer .copyright p {
   color: rgba(130, 130, 130, 0.85);
   margin-top: 20px;
 }
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .VAT {
+  margin-top: 25px;
+}
 .maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .VAT span {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -2223,10 +2483,15 @@ footer .maincontainer .copyright p {
   margin-bottom: 9px;
 }
 .maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Redeem input {
-  width: 100%;
+  flex-basis: 55%;
 }
 .maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Redeem .button button {
-  width: 90%;
+  width: 100%;
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Redeem .button button {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

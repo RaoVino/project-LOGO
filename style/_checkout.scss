@@ -1,181 +1,425 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
-.maincontainer {
-    .MainCheckoutContainer {
-        display: flex;
-        justify-content: space-between;
-        .CheckoutContainer {
-            flex-basis: 31%;
-            padding: 20px;
-            background: #FAFAFA;
-            input {
-                margin-bottom: 20px;
-                background: #FFFFFF;
-                padding: 10px;
-                width: 100%;
-                border: 1px solid rgba(130, 130, 130, 0.4);
-                outline: none;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+    .maincontainer {
+        h4 {
+            @include header;
+            font-size: 32px;
+            margin-bottom: 10px;
+            @media screen and (max-width: 900px) {
+                padding: 20px;
             }
-            .AccountCreate {
-                .passwordEmail {
-                    display: flex;
-                    align-items: center;
-                    img {
-                        width: 4%;
-                        margin-right: 5px;
-                    }
+            @media screen and (max-width: 414px) {
+                text-align: center;
+            }
+        }
+        .backbutton {
+            @media screen and (max-width: 414px) {
+                margin-left: 20px;
+            }
+            @media screen and (max-width: 900px) {
+                padding: 20px;
+            }
+            p {
+                @include paragraph;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                @media screen and (max-width: 414px) {
+                    display: block;
+                }
+            }
+            button {
+                background: none;
+                img {
+                    margin-right: 5px;
                 }
             }
         }
-        .paymentSec {
-            padding: 20px;
-            background: #FAFAFA;
-            flex-basis: 31%;
-            input {
-                margin-bottom: 10px;
-            }
-            .paypal {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                .paypalFirst {
-                    display: flex;
-                    align-items: center;
-                }
-            }
+        .backbutton {
+            background: none;
         }
-        .CheckoutLast {
-            padding: 20px;
-            background: #FAFAFA;
-            flex-basis: 35%;
-            .article {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                p {
-                    font-family: 'Inter', sans-serif;
-                    @include paragraph;
-                    font-weight: 500;
-                    font-size: 20px;
-                    color: $black;
-                    line-height: 21px;
-                    margin-bottom: 35px;
-                }
+        .MainCheckoutContainer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            @media screen and(max-width: 900px) {
+                display: block;
+                padding: 30px;
+                margin-top: 30px;
             }
-            .Article-a {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 40px;
-                .ArticleImg {
-                    display: flex;
-                    .Article-b {
-                        margin-left: 10px;
-                        p {
-                            margin-bottom: 7px;
-                            &:nth-child(1) {
-                                font-weight: bold;
-                            }
-                            &:nth-child(3) {
-                                font-size: larger;
-                                font-weight: bold;
-                            }
-                            &:nth-child(2) {
-                                @include paragraph;
-                                font-size: 18px;
-                                color: rgba(130, 130, 130, 0.85);
-                                line-height: 14px;
-                            }
-                            &:nth-child(4) {
-                                @include paragraph;
-                                font-size: 18px;
-                                color: rgba(130, 130, 130, 0.85);
-                                line-height: 14px;
-                            }
-                        }
+            @media screen and(max-width: 414px) {
+                display: block;
+                padding: 20px;
+                margin-top: 10px;
+            }
+            .CheckoutContainer {
+                flex-basis: 31%;
+                padding: 20px;
+                background: #FAFAFA;
+                input {
+                    margin-bottom: 20px;
+                    background: #FFFFFF;
+                    padding: 10px;
+                    width: 100%;
+                    border: 1px solid rgba(130, 130, 130, 0.4);
+                    outline: none;
+                    &::placeholder {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: rgba(130, 130, 130, 0.85);
                     }
                 }
-            }
-            .CheckedOutLast {
-                .WorkedDays {
-                    @include paragraph;
-                    font-size: 16px;
+                input[type=checkbox] {
+                    margin-bottom: 0;
+                    width: initial;
+                }
+                input[type=radio] {
+                    margin-bottom: 0;
+                    width: initial;
+                }
+                select {
+                    margin-bottom: 20px;
+                    background: #FFFFFF;
+                    padding: 10px;
+                    width: 100%;
+                    border: 1px solid rgba(130, 130, 130, 0.4);
+                    outline: none;
                     color: rgba(130, 130, 130, 0.85);
-                    line-height: 14px;
-                    margin-bottom: 60px;
-                }
-                .Subtotal {
-                    margin-bottom: 12px;
-                    align-items: center;
-                    .ship {
-                        p {
-                            margin-bottom: 10px;
-                            font-size: 22px;
-                        }
-                        span {
-                            font-size: 16px;
-                        }
-                    }
-                    .sar {
-                        span {
-                            font-size: 16px;
-                        }
-                        p {
-                            margin-bottom: 4px;
-                            line-height: 20.57px;
-                            font-size: 20px;
-                        }
-                    }
-                }
-                .Simply {
+                    font-family: 'Inter';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 15px;
                     line-height: 18px;
-                    color: rgba(130, 130, 130, 0.85);
-                    margin-top: 20px;
                 }
-                .VAT {
-                    span {
+                .AccountCreate {
+                    .mrs-mr {
+                        display: flex;
+                        margin-bottom: 20px;
+                        .MR {
+                            input[type="radio"] {
+                                width: 50px;
+                                height: 40px;
+                                border-radius: 5px;
+                                border: 2px solid color rgba(130, 130, 130, 0.85);
+                                transform: matrix(-1, 0, 0, 1, 0, 0);
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                            }
+                            input[type="radio"]:focus {
+                                outline: none;
+                            }
+                            input[type="radio"]:checked {
+                                background-color: $black;
+                            }
+                            input[type="radio"]:checked~span {
+                                color: white;
+                            }
+                            span:first-of-type {
+                                position: relative;
+                                left: -40px;
+                                top: -14px;
+                                font-size: 15px;
+                                color: $black;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .passwordEmail {
+                        display: flex;
+                        align-items: center;
+                        margin-left: 10px;
+                        img {
+                            width: 4%;
+                            margin-right: 5px;
+                        }
+                        span {
+                            font-family: 'Proxima Nova';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 10px;
+                            line-height: 10px;
+                            color: #828282;
+                        }
+                    }
+                    .street {
+                        display: flex;
+                        justify-content: space-between;
+                        input {
+                            flex-basis: 60%;
+                            width: 100%;
+                            &:nth-child(2) {
+                                flex-basis: 38%;
+                            }
+                        }
+                    }
+                    .pincode {
+                        display: flex;
+                        justify-content: space-between;
+                        input::-webkit-outer-spin-button,
+                        input::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+                        input {
+                            flex-basis: 37%;
+                            width: 100%;
+                            &:nth-child(2) {
+                                flex-basis: 60%;
+                            }
+                        }
+                    }
+                    .tickBox {
+                        margin: 20px 0;
+                        label {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                    .phoneNum {
+                        input::-webkit-outer-spin-button,
+                        input::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+                        input {
+                            margin-bottom: 4px;
+                        }
+                        p {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: rgba(130, 130, 130, 0.85);
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .ShipingAddr {
+                        margin: 20px 0;
+                    }
+                    &:nth-child(2) {
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .paymentSec {
+                flex-basis: 31%;
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+                .CC {
+                    background: #FAFAFA;
+                    padding: 30px 20px;
+                }
+                input {
+                    margin-bottom: 20px;
+                    background: #FFFFFF;
+                    padding: 10px;
+                    width: 100%;
+                    border: 1px solid rgba(130, 130, 130, 0.4);
+                    outline: none;
+                    &::placeholder {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: rgba(130, 130, 130, 0.85);
+                    }
+                }
+                input[type=checkbox] {
+                    margin-bottom: 0;
+                    width: initial;
+                }
+                input[type=radio] {
+                    margin-bottom: 0;
+                    width: initial;
+                }
+                .creditCard {
+                    display: flex;
+                    justify-content: space-between;
+                    input {
+                        flex-basis: 37%;
+                        width: 100%;
+                        &:nth-child(2) {
+                            flex-basis: 60%;
+                        }
+                    }
+                }
+                .paypal {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                    background: #FAFAFA;
+                    padding: 30px 20px;
+                    .paypalFirst {
+                        display: flex;
+                        align-items: center;
+                        font-family: 'Proxima Nova';
+                        .paypalImg {
+                            border: 1px solid rgba(130, 130, 130, 0.85);
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        label {
+                            margin-left: 15px;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: rgba(0, 0, 0, 0.85);
+                        }
+                    }
+                }
+            }
+            .CheckoutLast {
+                padding: 20px;
+                background: #FAFAFA;
+                flex-basis: 35%;
+                .article {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    p {
                         font-family: 'Inter', sans-serif;
                         @include paragraph;
-                        font-size: 15px;
-                        color: rgba(130, 130, 130, 0.85);
-                        line-height: 18px;
+                        font-weight: 500;
+                        font-size: 20px;
+                        color: $black;
+                        line-height: 21px;
+                        margin-bottom: 35px;
                     }
-                    .tot {
-                        p {
-                            @include paragraph;
-                            font-size: 20px;
-                            color: $black;
-                            font-weight: 500;
-                            line-height: 17px;
-                            margin-bottom: 14px;
-                        }
-                    }
-                    .include {
-                        text-align: right;
-                        p {
-                            font-family: 'Inter', sans-serif;
-                            @include paragraph;
-                            font-weight: 500;
-                            font-size: 22px;
-                            color: $black;
-                            line-height: 21px;
-                            margin-bottom: 9px;
+                }
+                .Article-a {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 30px;
+                    .ArticleImg {
+                        display: flex;
+                        .Article-b {
+                            margin-left: 10px;
+                            p {
+                                margin-bottom: 7px;
+                                &:nth-child(1) {
+                                    font-weight: bold;
+                                }
+                                &:nth-child(3) {
+                                    font-size: larger;
+                                    font-weight: bold;
+                                }
+                                &:nth-child(2) {
+                                    @include paragraph;
+                                    font-size: 18px;
+                                    color: rgba(130, 130, 130, 0.85);
+                                    line-height: 14px;
+                                }
+                                &:nth-child(4) {
+                                    @include paragraph;
+                                    font-size: 18px;
+                                    color: rgba(130, 130, 130, 0.85);
+                                    line-height: 14px;
+                                }
+                            }
                         }
                     }
                 }
-                .Redeem {
-                    input {
-                        width: 100%;
+                .CheckedOutLast {
+                    padding: 0 20px;
+                    .WorkedDays {
+                        @include paragraph;
+                        font-size: 16px;
+                        color: rgba(130, 130, 130, 0.85);
+                        line-height: 14px;
+                        margin-bottom: 60px;
                     }
-                    .button {
-                        button {
-                            width: 90%;
+                    .Subtotal {
+                        margin-bottom: 12px;
+                        align-items: center;
+                        .ship {
+                            p {
+                                margin-bottom: 10px;
+                                font-size: 22px;
+                            }
+                            span {
+                                font-size: 16px;
+                            }
+                        }
+                        .sar {
+                            span {
+                                font-size: 16px;
+                            }
+                            p {
+                                margin-bottom: 4px;
+                                line-height: 20.57px;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .Simply {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: rgba(130, 130, 130, 0.85);
+                        margin-top: 20px;
+                    }
+                    .VAT {
+                        margin-top: 25px;
+                        span {
+                            font-family: 'Inter', sans-serif;
+                            @include paragraph;
+                            font-size: 15px;
+                            color: rgba(130, 130, 130, 0.85);
+                            line-height: 18px;
+                        }
+                        .tot {
+                            p {
+                                @include paragraph;
+                                font-size: 20px;
+                                color: $black;
+                                font-weight: 500;
+                                line-height: 17px;
+                                margin-bottom: 14px;
+                            }
+                        }
+                        .include {
+                            text-align: right;
+                            p {
+                                font-family: 'Inter', sans-serif;
+                                @include paragraph;
+                                font-weight: 500;
+                                font-size: 22px;
+                                color: $black;
+                                line-height: 21px;
+                                margin-bottom: 9px;
+                            }
+                        }
+                    }
+                    .Redeem {
+                        input {
+                            flex-basis: 55%;
+                        }
+                        .button {
+                            button {
+                                width: 100%;
+                                @media screen and(max-width: 414px) {
+                                    margin-top: 0;
+                                }
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
