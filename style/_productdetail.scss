@@ -206,28 +206,39 @@
                     color: $black;
                     margin: 15px 0;
                     &::before {
-                        content: "\2022";
-                        padding-right: 10px;
+                        content: "";
+                        height: 8px;
+                        width: 0px;
+                        background-color: $afterColor;
+                        border-radius: 50%;
+                        display: inline-block;
+                        padding-right: 8px;
+                        margin-right: 10px;
                     }
                 }
             }
             .plus {
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
                 margin: 70px 20px 0 0;
                 @media screen and(max-width: 414px) {
                     display: block;
                     margin: 0;
                 }
                 .minus {
-                    padding: 5px 21px;
-                    width: 130px;
-                    margin-right: 20px;
+                    flex-basis: 35%;
+                    padding: 10px 21px;
                     border: 1px solid black;
                     display: flex;
+                    justify-content: space-between;
                     align-items: center;
                     @media screen and(max-width: 414px) {
                         width: 60%;
+                        margin: auto;
+                    }
+                    img {
+                        cursor: pointer;
                     }
                     input {
                         border: none;
@@ -241,13 +252,17 @@
                     }
                 }
                 .button {
-                    margin-right: 10px;
+                    text-align: center;
+                    flex-basis: 45%;
                     @media screen and(max-width: 414px) {
                         margin: auto;
                     }
-                    button {
+                    a {
+                        width: 100%;
+                        display: block;
+                        padding: 18px;
                         text-transform: capitalize;
-                        padding: 17px;
+                        font-size: 17px;
                         @media screen and(max-width: 414px) {
                             text-align: center;
                         }
@@ -255,8 +270,9 @@
                 }
                 i {
                     border: 1px solid black;
-                    padding: 10px;
-                    margin-right: 10px;
+                    flex-basis: 10%;
+                    padding: 17px;
+                    cursor: pointer;
                     @media screen and(max-width: 900px) {
                         margin-left: 15px;
                     }

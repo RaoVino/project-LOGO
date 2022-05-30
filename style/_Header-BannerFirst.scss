@@ -15,12 +15,17 @@
             }
             @media screen and(max-width: 938px) {
                 justify-content: space-evenly;
+                margin-right: 0px;
+                margin-bottom: 20px;
             }
             @media screen and(max-width: 900px) {
                 justify-content: center;
+                margin-right: 0px;
+                margin-bottom: 20px;
             }
             .searchsec {
                 button {
+                    background: none;
                     i {
                         @media screen and(max-width: 900px) {
                             margin-right: 20px;

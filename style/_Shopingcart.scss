@@ -3,12 +3,12 @@
            h4 {
                @include header;
                font-size: 32px;
-               margin-bottom: 10px;
+               margin-top: 30px;
                @media screen and (max-width: 900px) {
-                   padding: 20px;
+                   padding-left: 40px;
                }
                @media screen and (max-width: 414px) {
-                   text-align: center;
+                   text-align: left;
                }
            }
            .backbutton {
@@ -16,7 +16,7 @@
                    margin-left: 20px;
                }
                @media screen and (max-width: 900px) {
-                   padding: 20px;
+                   padding-left: 40px;
                }
                p {
                    @include paragraph;
@@ -41,11 +41,11 @@
                @media screen and (max-width: 900px) {
                    display: block;
                    padding: 30px;
-                   margin-top: 50px;
+                   margin-top: 0px;
                }
                @media screen and (max-width: 414px) {
-                   padding: 20px;
-                   margin-top: 0;
+                   padding: 40px;
+                   margin-top: 0%;
                }
                .unitPriceSec {
                    flex-basis: 62%;
@@ -103,12 +103,14 @@
                            img {
                                border: 1px solid black;
                                padding: 11px;
+                               cursor: pointer;
                                &:nth-child(1) {
                                    padding: 13px;
                                }
                            }
                        }
                        .delete {
+                           cursor: pointer;
                            @media screen and (max-width: 414px) {
                                display: none;
                            }

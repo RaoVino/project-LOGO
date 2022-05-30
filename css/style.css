@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("http://fonts.cdnfonts.com/css/proxima-nova-2%27");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 .headerSec .maincontainer .headLogo {
@@ -20,12 +19,19 @@
 @media screen and (max-width: 938px) {
   .headerSec .maincontainer .navSec {
     justify-content: space-evenly;
+    margin-right: 0px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 900px) {
   .headerSec .maincontainer .navSec {
     justify-content: center;
+    margin-right: 0px;
+    margin-bottom: 20px;
   }
+}
+.headerSec .maincontainer .navSec .searchsec button {
+  background: none;
 }
 @media screen and (max-width: 900px) {
   .headerSec .maincontainer .navSec .searchsec button i {
@@ -286,6 +292,9 @@ html {
   color: #A7A7A7;
   margin: 0 52px 0 7px;
 }
+.CheckoutPage .Optional img {
+  cursor: pointer;
+}
 .CheckoutPage .Redeem {
   display: flex;
   justify-content: space-between;
@@ -514,7 +523,7 @@ html {
 @media screen and (max-width: 900px) {
   .productsSec .maincontainer .container .grid-container {
     display: block;
-    padding: 20px;
+    padding: 40px;
   }
 }
 .productsSec .maincontainer .container .bathroom {
@@ -587,7 +596,7 @@ html {
 }
 @media screen and (max-width: 900px) {
   .creativeSec .maincontainer img {
-    padding: 20px;
+    padding: 40px;
   }
 }
 .creativeSec .maincontainer .creative {
@@ -656,6 +665,7 @@ html {
   bottom: 4px;
   margin: auto;
   right: 0;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -861,7 +871,7 @@ html {
 @media screen and (max-width: 900px) {
   .bannerThree .maincontainer .Shoroomcontainer .showroom {
     width: 100%;
-    padding: 20px;
+    padding: 40px;
   }
 }
 .bannerThree .maincontainer .Shoroomcontainer .showroom img {
@@ -1009,7 +1019,7 @@ html {
 @media screen and (max-width: 900px) {
   .projects .maincontainer .project-container .towerSec {
     display: block;
-    padding: 20px;
+    padding: 40px;
   }
 }
 .projects .maincontainer .project-container .towerSec .mallSec {
@@ -1151,6 +1161,7 @@ footer .maincontainer .footerSec {
     display: block;
     text-align: center;
     padding: 30px;
+    margin-top: 0px;
   }
 }
 footer .maincontainer .footerSec .footer-first {
@@ -1217,6 +1228,7 @@ footer .maincontainer .footerSec h4 {
 @media screen and (max-width: 900px) {
   footer .maincontainer .footerSec h4 {
     margin-top: 20px;
+    text-align: center;
   }
 }
 footer .maincontainer .copyright {
@@ -1290,7 +1302,7 @@ footer .maincontainer .copyright p {
 @media screen and (max-width: 900px) {
   .catagory .maincontainer {
     display: block;
-    padding: 20px;
+    padding: 40px;
   }
 }
 .catagory .maincontainer .catagoriesFirst {
@@ -1339,6 +1351,11 @@ footer .maincontainer .copyright p {
 }
 .catagory .maincontainer .catagoriesFirst:hover .catagoriesHover {
   visibility: visible;
+}
+@media screen and (max-width: 414px) {
+  .catagory .maincontainer .catagoriesFirst:hover .catagoriesHover {
+    display: none;
+  }
 }
 .catagory .maincontainer .catagoriesFirst .catagoriesPara {
   position: relative;
@@ -1405,6 +1422,7 @@ footer .maincontainer .copyright p {
 }
 .ZurichSec .maincontainer .project-container .filterSec .sortSec img {
   margin-right: 5px;
+  cursor: pointer;
 }
 @media screen and (max-width: 414px) {
   .ZurichSec .maincontainer .project-container .filterSec .sortSec img:nth-child(4) {
@@ -1413,6 +1431,7 @@ footer .maincontainer .copyright p {
 }
 .ZurichSec .maincontainer .project-container .filterSec .sortSec i {
   margin-right: 5px;
+  cursor: pointer;
 }
 .ZurichSec .maincontainer .project-container .filterSec .sortSec span {
   color: #252525;
@@ -1781,12 +1800,19 @@ footer .maincontainer .copyright p {
   margin: 15px 0;
 }
 .maincontainer .productName .heartcart .dolor p::before {
-  content: "•";
-  padding-right: 10px;
+  content: "";
+  height: 8px;
+  width: 0px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  display: inline-block;
+  padding-right: 8px;
+  margin-right: 10px;
 }
 .maincontainer .productName .heartcart .plus {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 70px 20px 0 0;
 }
 @media screen and (max-width: 414px) {
@@ -1796,17 +1822,21 @@ footer .maincontainer .copyright p {
   }
 }
 .maincontainer .productName .heartcart .plus .minus {
-  padding: 5px 21px;
-  width: 130px;
-  margin-right: 20px;
+  flex-basis: 35%;
+  padding: 10px 21px;
   border: 1px solid black;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 @media screen and (max-width: 414px) {
   .maincontainer .productName .heartcart .plus .minus {
     width: 60%;
+    margin: auto;
   }
+}
+.maincontainer .productName .heartcart .plus .minus img {
+  cursor: pointer;
 }
 .maincontainer .productName .heartcart .plus .minus input {
   border: none;
@@ -1821,26 +1851,31 @@ footer .maincontainer .copyright p {
   }
 }
 .maincontainer .productName .heartcart .plus .button {
-  margin-right: 10px;
+  text-align: center;
+  flex-basis: 45%;
 }
 @media screen and (max-width: 414px) {
   .maincontainer .productName .heartcart .plus .button {
     margin: auto;
   }
 }
-.maincontainer .productName .heartcart .plus .button button {
+.maincontainer .productName .heartcart .plus .button a {
+  width: 100%;
+  display: block;
+  padding: 18px;
   text-transform: capitalize;
-  padding: 17px;
+  font-size: 17px;
 }
 @media screen and (max-width: 414px) {
-  .maincontainer .productName .heartcart .plus .button button {
+  .maincontainer .productName .heartcart .plus .button a {
     text-align: center;
   }
 }
 .maincontainer .productName .heartcart .plus i {
   border: 1px solid black;
-  padding: 10px;
-  margin-right: 10px;
+  flex-basis: 10%;
+  padding: 17px;
+  cursor: pointer;
 }
 @media screen and (max-width: 900px) {
   .maincontainer .productName .heartcart .plus i {
@@ -1859,16 +1894,16 @@ footer .maincontainer .copyright p {
   font-size: 48px;
   color: #111010;
   font-size: 32px;
-  margin-bottom: 10px;
+  margin-top: 30px;
 }
 @media screen and (max-width: 900px) {
   .ShopingCartPage .maincontainer h4 {
-    padding: 20px;
+    padding-left: 40px;
   }
 }
 @media screen and (max-width: 414px) {
   .ShopingCartPage .maincontainer h4 {
-    text-align: center;
+    text-align: left;
   }
 }
 @media screen and (max-width: 414px) {
@@ -1878,7 +1913,7 @@ footer .maincontainer .copyright p {
 }
 @media screen and (max-width: 900px) {
   .ShopingCartPage .maincontainer .backbutton {
-    padding: 20px;
+    padding-left: 40px;
   }
 }
 .ShopingCartPage .maincontainer .backbutton p {
@@ -1910,13 +1945,13 @@ footer .maincontainer .copyright p {
   .ShopingCartPage .maincontainer .ShopingcartSec {
     display: block;
     padding: 30px;
-    margin-top: 50px;
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 414px) {
   .ShopingCartPage .maincontainer .ShopingcartSec {
-    padding: 20px;
-    margin-top: 0;
+    padding: 40px;
+    margin-top: 0%;
   }
 }
 .ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec {
@@ -1991,9 +2026,13 @@ footer .maincontainer .copyright p {
 .ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .qtycart img {
   border: 1px solid black;
   padding: 11px;
+  cursor: pointer;
 }
 .ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .qtycart img:nth-child(1) {
   padding: 13px;
+}
+.ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .delete {
+  cursor: pointer;
 }
 @media screen and (max-width: 414px) {
   .ShopingCartPage .maincontainer .ShopingcartSec .unitPriceSec .firstItem .delete {
@@ -2056,13 +2095,17 @@ footer .maincontainer .copyright p {
 }
 @media screen and (max-width: 900px) {
   .maincontainer h4 {
-    padding: 20px;
+    padding-left: 40px;
   }
 }
 @media screen and (max-width: 414px) {
   .maincontainer h4 {
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
   }
+}
+.maincontainer .backbutton {
+  background: none;
 }
 @media screen and (max-width: 414px) {
   .maincontainer .backbutton {
@@ -2071,7 +2114,7 @@ footer .maincontainer .copyright p {
 }
 @media screen and (max-width: 900px) {
   .maincontainer .backbutton {
-    padding: 20px;
+    padding-left: 20px;
   }
 }
 .maincontainer .backbutton p {
@@ -2094,9 +2137,6 @@ footer .maincontainer .copyright p {
 .maincontainer .backbutton button img {
   margin-right: 5px;
 }
-.maincontainer .backbutton {
-  background: none;
-}
 .maincontainer .MainCheckoutContainer {
   display: flex;
   justify-content: space-between;
@@ -2105,15 +2145,15 @@ footer .maincontainer .copyright p {
 @media screen and (max-width: 900px) {
   .maincontainer .MainCheckoutContainer {
     display: block;
-    padding: 30px;
-    margin-top: 30px;
+    padding: 40px;
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 414px) {
   .maincontainer .MainCheckoutContainer {
     display: block;
+    margin-top: 0px;
     padding: 20px;
-    margin-top: 10px;
   }
 }
 .maincontainer .MainCheckoutContainer .CheckoutContainer {
@@ -2133,17 +2173,22 @@ footer .maincontainer .copyright p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 18px;
   color: rgba(130, 130, 130, 0.85);
 }
 .maincontainer .MainCheckoutContainer .CheckoutContainer input[type=checkbox] {
   margin-bottom: 0;
   width: initial;
+  cursor: pointer;
 }
 .maincontainer .MainCheckoutContainer .CheckoutContainer input[type=radio] {
   margin-bottom: 0;
   width: initial;
+  cursor: pointer;
+}
+.maincontainer .MainCheckoutContainer .CheckoutContainer label {
+  cursor: pointer;
 }
 .maincontainer .MainCheckoutContainer .CheckoutContainer select {
   margin-bottom: 20px;
@@ -2156,8 +2201,9 @@ footer .maincontainer .copyright p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 18px;
+  cursor: pointer;
 }
 .maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .mrs-mr {
   display: flex;
@@ -2181,13 +2227,13 @@ footer .maincontainer .copyright p {
 .maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .mrs-mr .MR input[type=radio]:checked ~ span {
   color: white;
 }
-.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .mrs-mr .MR span:first-of-type {
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .mrs-mr .MR span {
   position: relative;
   left: -40px;
   top: -14px;
   font-size: 15px;
   color: #000000;
-  cursor: pointer;
+  pointer-events: none;
 }
 .maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .passwordEmail {
   display: flex;
@@ -2246,6 +2292,9 @@ footer .maincontainer .copyright p {
   color: #000000;
   margin-left: 10px;
 }
+.maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .ShipingAddr input {
+  margin-right: 10px;
+}
 .maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .phoneNum input::-webkit-outer-spin-button,
 .maincontainer .MainCheckoutContainer .CheckoutContainer .AccountCreate .phoneNum input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -2293,17 +2342,26 @@ footer .maincontainer .copyright p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 18px;
   color: rgba(130, 130, 130, 0.85);
-}
-.maincontainer .MainCheckoutContainer .paymentSec input[type=checkbox] {
-  margin-bottom: 0;
-  width: initial;
 }
 .maincontainer .MainCheckoutContainer .paymentSec input[type=radio] {
   margin-bottom: 0;
   width: initial;
+  cursor: pointer;
+}
+.maincontainer .MainCheckoutContainer .paymentSec input[type=radio] {
+  border-radius: 1px;
+  border: 1px solid color rgba(130, 130, 130, 0.85);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.maincontainer .MainCheckoutContainer .paymentSec input[type=radio]:focus {
+  outline: none;
+}
+.maincontainer .MainCheckoutContainer .paymentSec input[type=radio]:checked {
+  background-color: #000000;
 }
 .maincontainer .MainCheckoutContainer .paymentSec .creditCard {
   display: flex;
@@ -2335,8 +2393,16 @@ footer .maincontainer .copyright p {
 .maincontainer .MainCheckoutContainer .paymentSec .paypal .paypalFirst .paypalImg img {
   width: 100%;
 }
+.maincontainer .MainCheckoutContainer .paymentSec .paypal .paypalFirst .paypalImg-a {
+  border: 1px solid rgba(130, 130, 130, 0.85);
+  padding: 0 7px;
+}
+.maincontainer .MainCheckoutContainer .paymentSec .paypal .paypalFirst .paypalImg-a img {
+  width: 100%;
+}
 .maincontainer .MainCheckoutContainer .paymentSec .paypal .paypalFirst label {
   margin-left: 15px;
+  cursor: pointer;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -2344,9 +2410,13 @@ footer .maincontainer .copyright p {
   color: rgba(0, 0, 0, 0.85);
 }
 .maincontainer .MainCheckoutContainer .CheckoutLast {
-  padding: 20px;
   background: #FAFAFA;
   flex-basis: 35%;
+}
+@media screen and (max-width: 414px) {
+  .maincontainer .MainCheckoutContainer .CheckoutLast {
+    padding: 0px;
+  }
 }
 .maincontainer .MainCheckoutContainer .CheckoutLast .article {
   display: flex;
@@ -2382,17 +2452,19 @@ footer .maincontainer .copyright p {
 }
 .maincontainer .MainCheckoutContainer .CheckoutLast .Article-a .ArticleImg .Article-b p:nth-child(1) {
   font-weight: bold;
+  font-size: 14px;
 }
 .maincontainer .MainCheckoutContainer .CheckoutLast .Article-a .ArticleImg .Article-b p:nth-child(3) {
   font-size: larger;
   font-weight: bold;
+  font-size: 18px;
 }
 .maincontainer .MainCheckoutContainer .CheckoutLast .Article-a .ArticleImg .Article-b p:nth-child(2) {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  font-size: 18px;
+  font-size: 16px;
   color: rgba(130, 130, 130, 0.85);
   line-height: 14px;
 }
@@ -2401,7 +2473,7 @@ footer .maincontainer .copyright p {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  font-size: 18px;
+  font-size: 16px;
   color: rgba(130, 130, 130, 0.85);
   line-height: 14px;
 }
@@ -2444,6 +2516,14 @@ footer .maincontainer .copyright p {
   line-height: 18px;
   color: rgba(130, 130, 130, 0.85);
   margin-top: 20px;
+  display: flex;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Simply input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Simply label {
+  cursor: pointer;
 }
 .maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .VAT {
   margin-top: 25px;
@@ -2484,8 +2564,14 @@ footer .maincontainer .copyright p {
   line-height: 21px;
   margin-bottom: 9px;
 }
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Redeem {
+  justify-content: space-around;
+}
 .maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Redeem input {
   flex-basis: 55%;
+}
+.maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Redeem .button {
+  flex-basis: 40%;
 }
 .maincontainer .MainCheckoutContainer .CheckoutLast .CheckedOutLast .Redeem .button button {
   width: 100%;

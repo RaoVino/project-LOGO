@@ -44,7 +44,7 @@
             display: flex;
             @media screen and (max-width: 900px) {
                 display: block;
-                padding: 20px;
+                padding: 40px;
             }
             .catagoriesFirst {
                 flex-basis: 23%;
@@ -77,6 +77,9 @@
                 &:hover {
                     .catagoriesHover {
                         visibility: visible;
+                        @media screen and (max-width: 414px) {
+                            display: none;
+                        }
                     }
                 }
                 .catagoriesPara {
@@ -139,6 +142,7 @@
                         }
                         img {
                             margin-right: 5px;
+                            cursor: pointer;
                             @media screen and (max-width: 414px) {
                                 &:nth-child(4) {
                                     display: none;
@@ -147,6 +151,7 @@
                         }
                         i {
                             margin-right: 5px;
+                            cursor: pointer;
                         }
                         span {
                             color: #252525;

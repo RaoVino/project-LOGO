@@ -76,7 +76,7 @@
                 grid-template-areas: "header main sidebar " "header main footer";
                 @media screen and(max-width: 900px) {
                     display: block;
-                    padding: 20px;
+                    padding: 40px;
                 }
             }
             .bathroom {
@@ -134,7 +134,7 @@
         img {
             width: 100%;
             @media screen and(max-width: 900px) {
-                padding: 20px;
+                padding: 40px;
             }
         }
         .creative {
@@ -190,6 +190,7 @@
                 bottom: 4px;
                 margin: auto;
                 right: 0;
+                cursor: pointer;
                 @media screen and(max-width: 900px) {
                     width: 30%;
                 }
